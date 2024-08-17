@@ -12,7 +12,21 @@ export const items: Array<Education> = [
 	  period: { from: new Date(2016, 8, 1), to: new Date(2021, 5, 1) },
 	  shortDescription: 'Specialized in Information Technology',
 	  slug: 'technical-high-school-computer-science',
-	  subjects: ['Programming', 'Networking', 'Hardware Maintenance', 'Operating Systems', 'Databases']
+	  subjects: ['Programming', 'Networking', 'Hardware Maintenance', 'Operating Systems', 'Databases',
+		  'Certificate: CCNA Routing and Switching: Introduction to Networks',
+		  'Certificate: PCAP: Programming Essentials in Python',
+		  'Certificate: NDG Linux Unhatched',
+		  'Certificate: Introduction to Cybersecurity',
+		  'Certificate: Cybersecurity Essentials',
+		  'Certificate: Be Your Own Boss',
+		  'Certificate: Get Connected',
+		  'Certificate: Introduction to the Internet of Everything',
+		  'Certificate: 3ds Max Animation',
+		  'Certificate: 3ds Max Visualisation',
+		  'Certificate: 3ds Max Modeling',
+		  'Certificate: EU Code Week',
+		  'Certificate: CPA: Programming Essentials in C++',
+	  ]
 	},
 	{
 		degree: 'Bachelor degree of Computer Science',
