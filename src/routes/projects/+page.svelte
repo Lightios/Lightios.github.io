@@ -35,21 +35,35 @@
 		});
 	};
 
-	$: {
-		displayed = items.filter((project) => {
-			const isFiltered =
-				filters.every((item) => !item.isSelected) ||
-				project.skills.some((tech) =>
-					filters.some((filter) => filter.isSelected && filter.slug === tech.slug)
-				);
+	function groupProjectsByCategory(projects) {
+    return projects.reduce((acc, project) => {
+        const category = project.category || 'Uncategorized';
+        if (!acc[category]) {
+            acc[category] = [];
+        }
+        acc[category].push(project);
+        return acc;
+    }, {});
+}
 
-			const isSearched =
-				search.trim().length === 0 ||
-				project.name.trim().toLowerCase().includes(search.trim().toLowerCase());
-
-			return isFiltered && isSearched;
-		});
-	}
+$: groupedProjects = groupProjectsByCategory(items);
+$: displayed = Object.entries(groupedProjects).reduce((acc, [category, projects]) => {
+    const filteredProjects = projects.filter(project => {
+        const isFiltered =
+            filters.every(item => !item.isSelected) ||
+            project.skills.some(tech =>
+                filters.some(filter => filter.isSelected && filter.slug === tech.slug)
+            );
+        const isSearched =
+            search.trim().length === 0 ||
+            project.name.trim().toLowerCase().includes(search.trim().toLowerCase());
+        return isFiltered && isSearched;
+    });
+    if (filteredProjects.length > 0) {
+        acc[category] = filteredProjects;
+    }
+    return acc;
+}, {});
 
 	const onSearch = (e: CustomEvent<{ search: string }>) => {
 		search = e.detail.search;
@@ -78,18 +92,23 @@
 			>
 		{/each}
 	</div>
-	{#if displayed.length === 0}
-		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">
-			<UIcon icon="i-carbon-cube" classes="text-3.5em" />
-			<p class="font-300">Could not find anything...</p>
-		</div>
-	{:else}
-		<div class="projects-list mt-5">
-			{#each displayed as project}
-				<ProjectCard {project} />
-			{/each}
-		</div>
-	{/if}
+	{#if Object.keys(displayed).length === 0}
+    <div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">
+        <UIcon icon="i-carbon-cube" classes="text-3.5em" />
+        <p class="font-300">Could not find anything...</p>
+    </div>
+{:else}
+    {#each Object.entries(groupedProjects) as [category, projects]}
+  <section>
+    <h2>{category}</h2>
+    <div class="projects-list">
+      {#each projects as project}
+        <ProjectCard {project} />
+      {/each}
+    </div>
+  </section>
+{/each}
+{/if}
 </SearchPage>
 
 <style lang="scss">
