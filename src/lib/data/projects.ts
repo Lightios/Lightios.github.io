@@ -19,7 +19,7 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('python', 'kivy', 'pillow', 'fpdf2'),
 		type: 'Desktop Application',
-		category: { slug: 'software', name: 'Software' },
+		category: 'Commercial',
 		screenshots: [
 			{
 				label: 'Main screen',
@@ -64,7 +64,7 @@ export const items: Array<Project> = [
 		skills: getSkills('python', 'kivy', 'kotlin', 'compose'),
 		type: 'Mobile Application',
 
-		category: { slug: 'software', name: 'Software' },
+		category: 'Commercial',
 		screenshots: [
 			{
 				label: 'Lineup selection',
@@ -100,7 +100,7 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('python', 'kivy'),
 		type: 'Desktop Application',
-		category: { slug: 'software', name: 'Software' },
+		category: 'Academic',
 		screenshots: [
 			{
 				label: 'Project selection',
@@ -147,7 +147,7 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('kotlin', 'compose', 'latex', 'python', 'manim'),
 		type: 'Mobile Application',
-		category: { slug: 'software', name: 'Software' },
+		category: 'Commercial',
 
 		screenshots: [
 			{
@@ -193,7 +193,7 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
 		type: 'Desktop application',
-		category: { slug: 'softwdsadare', name: 'Sofasdaare' }
+		category: 'Academic',
 	}
 ];
 

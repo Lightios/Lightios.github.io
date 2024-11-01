@@ -3,6 +3,19 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
+		degree: 'Bachelor degree of Computer Science',
+		description: '',
+		location: 'Poland',
+		logo: Assets.UJ,
+		name: '',
+		organization: 'Jagiellonian University',
+		period: { from: new Date(2021, 9, 1), to: new Date(2024, 9, 1) },
+		shortDescription: '',
+		slug: 'dummy-education-item',
+		subjects: ['Algebra', 'Computer Organization and Architecture', 'Programming', 'Logic and Set Theory', 'Mathematical Analysis', 'Programming Methods', 'Operating Systems', 'Algorithms and Data Structures', 'Discrete Mathematics', 'Databases', 'Software Engineering', 'Probability and Statistics', 'Computer Networks', 'Formal Languages and Automata', 'Numerical Methods', 'Functional Programming', 'Android Programming', 'Design Patterns', 'C# Programming', 'Cognitive Systems', 'Cognitive Science', 'Web Programming', 'Fundamentals of AI', 'English',]
+	},
+
+	{
 	  degree: 'Technician of Information Technology',
 	  description: 'A comprehensive program covering various aspects of computer science and information technology, including programming, networking, and hardware maintenance.',
 	  location: 'Poland',
@@ -28,18 +41,6 @@ export const items: Array<Education> = [
 		  'Certificate: CPA: Programming Essentials in C++',
 	  ]
 	},
-	{
-		degree: 'Bachelor degree of Computer Science',
-		description: '',
-		location: 'Poland',
-		logo: Assets.UJ,
-		name: '',
-		organization: 'Jagiellonian University',
-		period: { from: new Date(2021, 9, 1), to: new Date(2024, 9, 1) },
-		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['Algebra', 'Computer Organization and Architecture', 'Programming', 'Logic and Set Theory', 'Mathematical Analysis', 'Programming Methods', 'Operating Systems', 'Algorithms and Data Structures', 'Discrete Mathematics', 'Databases', 'Software Engineering', 'Probability and Statistics', 'Computer Networks', 'Formal Languages and Automata', 'Numerical Methods', 'Functional Programming', 'Android Programming', 'Design Patterns', 'C# Programming', 'Cognitive Systems', 'Cognitive Science', 'Web Programming', 'Fundamentals of AI', 'English',]
-	}
 ];
 
 export const title = 'Education';

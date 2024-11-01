@@ -35,16 +35,16 @@
 		});
 	};
 
-	function groupProjectsByCategory(projects) {
-    return projects.reduce((acc, project) => {
-        const category = project.category || 'Uncategorized';
-        if (!acc[category]) {
-            acc[category] = [];
-        }
-        acc[category].push(project);
-        return acc;
-    }, {});
-}
+	function groupProjectsByCategory(projects: Array<Project>) {
+        return projects.reduce((acc, project) => {
+            const category = project.category || 'Uncategorized';
+            if (!acc[category]) {
+                acc[category] = [];
+            }
+            acc[category].push(project);
+            return acc;
+        }, {});
+    }
 
 $: groupedProjects = groupProjectsByCategory(items);
 $: displayed = Object.entries(groupedProjects).reduce((acc, [category, projects]) => {
