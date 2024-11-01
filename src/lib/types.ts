@@ -7,7 +7,9 @@ export enum Platform {
 	Linkedin = 'linkedin',
 	Email = 'email',
 	Facebook = 'facebook',
-	Youtube = 'youtube'
+	Youtube = 'youtube',
+	Superprof = 'superprof',
+	LeetCode = 'leetcode',
 }
 
 export type Icon = `i-${string}-${string}`;
@@ -80,8 +82,8 @@ export interface Education<S extends string = string> extends Item<S> {
 	degree: string;
 }
 
-export interface Achievement{
-	name: string;
+export interface Achievement<S extends string = string> extends Item<S> {
 	organization: string;
+	name: string;
 	date: Date;
 }
