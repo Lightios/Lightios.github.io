@@ -82,8 +82,8 @@ export interface Education<S extends string = string> extends Item<S> {
 	degree: string;
 }
 
-export interface Achievement<S extends string = string> extends Item<S> {
-	organization: string;
+export interface Achievement{
 	name: string;
+	organization: string;
 	date: Date;
 }
