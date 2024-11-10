@@ -12,6 +12,7 @@ export default {
 
     "NoResults": "Could not find anything...",
     "SearchPlaceholder": "Search...",
+    "Search": "Search",
 
     "Programming Languages": "Programming Languages",
     "Frameworks": "Frameworks",
@@ -124,6 +125,7 @@ export default {
 
     "NoResults": "Nie udało się niczego znaleźć...",
     "SearchPlaceholder": "Wyszukaj...",
+    "Search": "Szukaj",
 
     "Skills": "Umiejętności",
     "Projects": "Projekty",
