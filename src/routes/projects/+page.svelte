@@ -9,6 +9,7 @@
 	import ProjectCard from '$lib/components/ProjectCard/ProjectCard.svelte';
 	import SearchPage from '$lib/components/SearchPage.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
+	import {t} from "../../services/i18n";
 
 	interface SkillFilter extends Skill {
 		isSelected?: boolean;
@@ -100,7 +101,7 @@ $: displayed = Object.entries(groupedProjects).reduce((acc, [category, projects]
 {:else}
     {#each Object.entries(groupedProjects) as [category, projects]}
   <section>
-    <h2>{category}</h2>
+    <h2>{$t(category)}</h2>
     <div class="projects-list">
       {#each projects as project}
         <ProjectCard {project} />

@@ -5,6 +5,7 @@
 	import { items, title } from '@data/experience';
 	import type { Experience } from '$lib/types';
 	import { isBlank } from '@riadh-adrani/utils';
+	import {t} from "../../services/i18n";
 
 	let result: Array<Experience> = [...items];
 

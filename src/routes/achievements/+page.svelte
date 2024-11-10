@@ -9,6 +9,7 @@
 	import { title, items } from '@data/achievements';
 	import type {Achievement} from '$lib/types';
 	import { getTimeDiff } from '$lib/utils';
+	import {locale, t} from "../../services/i18n";
 
 	let search = '';
 
@@ -57,10 +58,8 @@
 <!--									width="50"-->
 <!--									class="mb-5"-->
 <!--								/>-->
-								<div class="text-[1.7em]">{achievement.name}</div>
-								<div class="text-[1.0em]">{getMonthName(
-								achievement.date.getMonth()
-							)} {achievement.date.getFullYear()}</div>
+								<div class="text-[1.7em]">{$t(achievement.name)}</div>
+								<div class="text-[1.0em]">{achievement.date.toLocaleDateString($locale, {month: "long", year: "numeric"})}</div>
 								<div class="text-[1.0em]">{achievement.organization}</div>
 								<!--								<div class="text-[var(&#45;&#45;accent-text)] text-[0.9em] font-200 mb-2">-->
 <!--									{education.location} · {getTimeDiff(education.period.from, education.period.to)}-->

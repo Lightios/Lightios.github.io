@@ -9,24 +9,29 @@
 	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
 	import Chip from '../Chip/Chip.svelte';
+	import {locale, t} from "../../../services/i18n";
+	import CardDivider from "@components/Card/CardDivider.svelte";
 
 	export let experience: Experience;
 
 	const months = getTimeDiff(experience.period.from, experience.period.to);
 
-	const from = `${getMonthName(
-		experience.period.from.getMonth()
-	)} ${experience.period.from.getFullYear()}`;
-	const to = experience.period.to
-		? `${getMonthName(experience.period.to.getMonth())} ${experience.period.to.getFullYear()}`
-		: 'Present';
-
-	const period = `${from} - ${to} · ${months}`;
+	$: currentLanguage = $locale;
+	$: period = `${getTimeDiff(
+		experience.period.from,
+		experience.period.to ?? new Date(Date.now() + 1000 * 60 * 60 * 24),
+		currentLanguage,
+	)}`;
+	// $: from = `${getMonthName(project.period.from.getMonth())} ${project.period.from.getFullYear()}`;
+	$: from = `${experience.period.from.toLocaleDateString($locale, {month: "long", year: "numeric"})}`;
+	$: to = experience.period.to
+		? `${experience.period.to.toLocaleDateString($locale, {month: "long", year: "numeric"})}`
+		: 'now';
 
 	$: info = [
 		{ label: experience.company, icon: 'i-carbon-building' },
 		{ label: experience.location, icon: 'i-carbon-location' },
-		{ label: experience.contract, icon: 'i-carbon-hourglass' }
+		// { label: experience.contract, icon: 'i-carbon-hourglass' }
 	] as const;
 </script>
 
@@ -43,19 +48,24 @@
 				<h3
 					class="flex text-[0.9em] flex-col items-start sm:flex-row sm:items-center justify-between sm:gap-5 md:flex-col md:items-start md:gap-0 lg:flex-row lg:items-center"
 				>
-					<CardTitle title={`${experience.name}`} />
+					<CardTitle title={`${$t(experience.name)}`} />
 				</h3>
 				<div class="row flex-wrap items-start m-b-2 gap-1 text-0.9em font-300">
 					{#each info as item}
 						<Chip>
 							<UIcon icon={item.icon} />
-							<span class="m-l-1">{item.label}</span>
+							<span class="m-l-1">{$t(item.label)}</span>
 						</Chip>
 					{/each}
+
 				</div>
 			</div>
-			<div class="text-[var(--text)] text-[0.9em] font-200">{period}</div>
-			<div class="experience-description">{experience.shortDescription}</div>
+			<div
+				class="row m-b-15px justify-between text-[var(--secondary-text)] text-0.9em font-italic font-300"
+			>
+						<p>{period}</p>
+			</div>
+			<div class="experience-description">{$t(experience.shortDescription)}</div>
 			<div class="flex flex-row flex-wrap mt-5">
 				{#each experience.skills as skill}
 					<ChipIcon
@@ -64,6 +74,13 @@
 						href={`${base}/skills/${skill.slug}`}
 					/>
 				{/each}
+			</div>
+
+			<div class="row justify-between text-0.8em font-400">
+				<Chip>{from}</Chip>
+				{#if from !== to}
+					<Chip>{to}</Chip>
+				{/if}
 			</div>
 		</div>
 	</div>

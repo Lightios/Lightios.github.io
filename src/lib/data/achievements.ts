@@ -12,7 +12,6 @@ export const items: Array<Achievement> = [
         organization: 'Starosta Przeworski',
         date: new Date(2020, 11, 1),
     },
-
     {
         name: '1st Place in the EXPERT Group at the PIX 2019 Contest - National School Programming Championship',
         organization: 'eduLAB',
@@ -24,9 +23,8 @@ export const items: Array<Achievement> = [
         organization: 'eduLAB',
         date: new Date(2019, 12, 13)
     },
-
     {
-        name: 'Honorable Mention in the National History Contest "Krąg"',
+        name: 'Honorable Mention in the National History Contest "Krag"',
         organization: 'Stowarzyszenie Upowszechniania Wiedzy i Kultury Regionalnej „Pokolenie”',
         date: new Date(2019, 12, 1)
     },
@@ -50,7 +48,7 @@ export const items: Array<Achievement> = [
     },
 
     {
-        name: '2nd Place in the 24th Prof. Jan Marszał Mathematics Contest for Middle Schools',
+        name: '2nd Place in the 24th Prof. Jan Marszal Mathematics Contest for Middle Schools',
         organization: 'I Liceum Ogólnokształcące w im. H. Sienkiewicza w Łańcucie',
         date: new Date(2017, 2, 10)
     },

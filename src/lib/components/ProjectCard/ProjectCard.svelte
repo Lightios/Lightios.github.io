@@ -10,18 +10,30 @@
 	import type { Project } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
 	import { base } from '$app/paths';
+	import {locale, t} from "../../../services/i18n";
 
 	export let project: Project;
 	$: months = countMonths(project.period.from, project.period.to);
 	// $: period = `${months} month${months > 1 ? 's' : ''}`;
+
+	$: currentLanguage = $locale;
 	$: period = `${getTimeDiff(
 		project.period.from,
-		project.period.to ?? new Date(Date.now() + 1000 * 60 * 60 * 24)
+		project.period.to ?? new Date(Date.now() + 1000 * 60 * 60 * 24),
+		currentLanguage,
 	)}`;
-	$: from = `${getMonthName(project.period.from.getMonth())} ${project.period.from.getFullYear()}`;
+	// $: from = `${getMonthName(project.period.from.getMonth())} ${project.period.from.getFullYear()}`;
+	$: from = `${project.period.from.toLocaleDateString($locale, {month: "long", year: "numeric"})}`;
 	$: to = project.period.to
-		? `${getMonthName(project.period.to.getMonth())} ${project.period.to.getFullYear()}`
+		? `${project.period.to.toLocaleDateString($locale, {month: "long", year: "numeric"})}`
 		: 'now';
+
+	// $: time = new Date().toLocaleDateString($locale, {
+	// 	weekday: "long",
+	// 	year: "numeric",
+	// 	month: "long",
+	// 	day: "numeric",
+ 	//  });
 </script>
 
 <Card color={project.color} href={`${base}/projects/${project.slug}`}>
@@ -45,7 +57,7 @@
 		<p
 			class="text-[0.95em] text-[var(--secondary-text)] font-300 m-t-20px m-b-40px flex-1 line-clamp-3"
 		>
-			{project.shortDescription}
+			{$t(project.shortDescription)}
 		</p>
 	</div>
 	<div class="row justify-between text-0.8em font-400">

@@ -8,10 +8,13 @@
 	import { title, items } from '@data/education';
 	import type { Education } from '$lib/types';
 	import { getTimeDiff } from '$lib/utils';
+	import {locale, t} from "../../services/i18n";
 
 	let search = '';
 
 	let result: Array<Education> = items;
+
+	$: currentLanguage = $locale;
 
 	const onSearch = (ev: CustomEvent<{ search: string }>) => {
 		const s = ev.detail.search;
@@ -60,14 +63,14 @@
 									width="50"
 									class="mb-5"
 								/>
-								<div class="text-[1.3em]">{education.degree}</div>
-								<div>{education.organization}</div>
+								<div class="text-[1.3em]">{$t(education.degree)}</div>
+								<div>{$t(education.organization)}</div>
 								<div class="text-[var(--accent-text)] text-[0.9em] font-200 mb-2">
-									{education.location} · {getTimeDiff(education.period.from, education.period.to)}
+									{$t(education.location)} · {getTimeDiff(education.period.from, education.period.to, currentLanguage)}
 								</div>
 								<div class="row flex-wrap gap-1">
 									{#each education.subjects as subject}
-										<Chip>{subject}</Chip>
+										<Chip>{$t(subject)}</Chip>
 									{/each}
 								</div>
 							</div>

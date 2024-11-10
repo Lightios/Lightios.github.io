@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
 import type { Item, Skill } from '$lib/types';
+import {t} from "../../services/i18n";
 
 dayjs.extend(duration);
 
@@ -43,32 +44,54 @@ export const useImage = (url: string, base: string): string => `${base}${url}`;
 
 export const useTitle = (title: string, suffix: string) => `${title} | ${suffix}`;
 
-export function getTimeDiff(date1: Date, date2 = new Date(Date.now() + 1000 * 60 * 60 * 24)) {
-	const d1 = dayjs(date1);
-	const d2 = dayjs(date2);
+export function getTimeDiff(
+  date1: Date,
+  date2 = new Date(Date.now() + 1000 * 60 * 60 * 24),
+  locale = 'en'
+) {
+  const d1 = dayjs(date1);
+  const d2 = dayjs(date2);
 
-	const duration = dayjs.duration(d2.diff(d1));
+  const duration = dayjs.duration(d2.diff(d1));
 
-	let n = 0;
-	let u = 'day';
+  let n = 0;
+  let u = 'day';
+
+  const translations = {
+    en: {
+      day: ['day', 'days'],
+      week: ['week', 'weeks'],
+      month: ['month', 'months'],
+      year: ['year', 'years']
+    },
+    pl: {
+      day: ['dzień', 'dni'],
+      week: ['tydzień', 'tygodnie'],
+      month: ['miesiąc', 'miesiące'],
+      year: ['rok', 'lata']
+    }
+  };
 
 	if (duration.as('days') <= 7) {
-		u = 'day';
-		n = duration.as('days');
+	  u = 'day';
+	  n = duration.as('days');
 	} else if (duration.as('months') <= 1) {
-		u = 'week';
-		n = duration.as('weeks');
+	  u = 'week';
+	  n = duration.as('weeks');
 	} else if (duration.as('years') <= 1) {
-		u = 'month';
-		n = duration.as('months');
+	  u = 'month';
+	  n = duration.as('months');
 	} else {
-		u = 'year';
-		n = duration.as('years');
+	  u = 'year';
+	  n = duration.as('years');
 	}
 
-	n = Math.trunc(n);
 
-	return `${Math.trunc(n)} ${u}${n > 1 ? 's' : ''}`;
+  n = Math.trunc(n);
+
+  const unit = translations[locale][u][n > 1 ? 1 : 0];
+
+  return `${n} ${unit}`;
 }
 
 export type ItemOrSkill = Item | Skill;

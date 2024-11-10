@@ -3,6 +3,7 @@
 	import { theme, toggleTheme } from '$lib/stores/theme';
 	import { items } from '@data/navbar';
 	import * as HOME from '@data/home';
+	import {locale, locales, t} from '../../../services/i18n.js';
 
 	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
@@ -18,6 +19,14 @@
 			expanded = v;
 		}
 	};
+	
+	function toggleLanguage() {
+		$locale = $locale === 'en' ? 'pl' : 'en';
+	}
+
+	function doAnythingWithText(text: string): string {
+		return "aa";
+	}
 </script>
 
 <div class="nav-menu">
@@ -40,20 +49,33 @@
 			{#each items as item (item.title)}
 				<a href={`${base}${item.to}`} class="nav-menu-item !text-[var(--secondary-text)]">
 					<UIcon icon={item.icon} classes="text-1.3em" />
-					<span class="nav-menu-item-label">{item.title}</span>
+					<span class="nav-menu-item-label">{$t(item.title)}</span>
 				</a>
 			{/each}
+		</div>
+		<div>
+<!--			<select bind:value={$locale}>-->
+<!--			  {#each locales as l}-->
+<!--				<option value={l}>{l}</option>-->
+<!--			  {/each}-->
+<!--			</select>-->
+
 		</div>
 		<div
 			class="row h-full justify-center items-stretch m-l-auto md:m-l-0 w-auto md:w-150px gap-1 text-1.15em"
 		>
 			<div class="row hidden md:flex">
-				<a
-					href={`${base}/search`}
-					class="text-inherit col-center self-stretch px-2 hover:bg-[color:var(--main-hover)]"
-				>
-					<UIcon icon="i-carbon-search" />
-				</a>
+				<div class="language-toggle">
+					<button on:click={toggleLanguage} class="toggle-button">
+					<span class="toggle-label">{$locale === 'en' ? 'EN' : 'PL'}</span>
+					</button>
+				</div>
+<!--				<a-->
+<!--					href={`${base}/search`}-->
+<!--					class="text-inherit col-center self-stretch px-2 hover:bg-[color:var(&#45;&#45;main-hover)]"-->
+<!--				>-->
+<!--					<UIcon icon="i-carbon-search" />-->
+<!--				</a>-->
 				<button
 					class="bg-transparent text-1em border-none cursor-pointer hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
 					on:click={() => toggleTheme()}
@@ -73,6 +95,8 @@
 					on:keyup
 					on:click={() => toggleExpanded()}
 				/>
+				<div>
+		</div>
 			</div>
 		</div>
 	</nav>
@@ -89,6 +113,7 @@
 				</a>
 			{/each}
 		</div>
+
 		<div class="col gap-2 m-t-7">
 			<a
 				href={`${base}/search`}
@@ -115,6 +140,39 @@
 </div>
 
 <style lang="scss">
+	.language-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+
+  .toggle-button {
+    background-color: var(--main);
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: var(--main-text);
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: var(--accent);
+      color: var(--accent-text);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 5px var(--accent);
+    }
+  }
+
+  .toggle-label {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
 	.nav-menu {
 		display: flex;
 		justify-content: center;

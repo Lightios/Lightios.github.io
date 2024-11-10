@@ -2,14 +2,16 @@ import Assets from './assets';
 import { getSkills } from './skills';
 import type { Project } from '../types';
 
+import {locale, locales, t} from '../../services/i18n.js';
+import { get } from 'svelte/store';
+
 export const items: Array<Project> = [
 	{
 		slug: 'master-system',
 		color: '#e68510',
-		description:
-			'This tournament management application was developed on commission to facilitate competitive match play according to a client-specific algorithm. The app provides a user-friendly interface for entering match results, automatically pairs teams for the next round based on the algorithm, calculates points, and generates comprehensive PDF summaries of the tournament\'s progress. Additionally, it creates graphs to visually represent the algorithm\'s logic and outcomes. The application is translated into four languages using Python\'s gettext module, ensuring accessibility for a diverse user base. This project showcases my ability to deliver tailored, multilingual software solutions that meet specific client requirements and enhance the management of complex tournament structures.\n\n Owner contact information in included on a screenshot]',
-		shortDescription:
-			'Tournament management app with custom algorithm, match results, team pairing, points calculation, PDF summaries, and multi-language support using Python gettext.',
+	    description: 'projects.master-system.description',
+
+		shortDescription: 'projects.master-system.shortDescription',
 		links: [], // { to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }
 		logo: Assets.MasterSystem,
 		name: 'Multi K.O. Tournament System',
@@ -50,10 +52,8 @@ export const items: Array<Project> = [
 	{
 		slug: 'vl',
 		color: '#2de80c',
-		description:
-			'Valorant Lineups is a comprehensive mobile application tailored for Valorant players to enhance their in-game strategies. The app offers a vast collection of lineups, enabling players to execute advanced techniques without the need for extensive memorization. By providing real-time guidance and detailed instructions, Valorant Lineups streamlines the learning process and empowers players to perform at their best, improving both individual and team performance.',
-		shortDescription:
-			'Mobile app for Valorant players to use in-game lineups without prior memorization, enhancing gameplay strategies.',
+		description: 'projects.vl.description',
+		shortDescription: 'projects.vl.shortDescription',
 		links: [], // { to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }
 		logo: Assets.ValorantLineups,
 		name: 'Valorant Lineups',
@@ -87,10 +87,8 @@ export const items: Array<Project> = [
 	{
 		slug: 'demiurg',
 		color: '#0eaae3',
-		shortDescription:
-			'Text-based game creator and interpreter, developed in a team, enabling users to design and play complex interactive narratives.',
-		description:
-			'Demiurg is a comprehensive application developed as part of a Software Engineering course, created by a team of five. The project includes a robust game creator and interpreter for text-based games, allowing users to design intricate game worlds with advanced mechanics such as non-linear quests and dynamic storylines. The creator empowers users to craft detailed interactive narratives, while the interpreter provides an immersive experience for playing these games. This project showcases our collaborative effort and proficiency in software development, highlighting our ability to deliver sophisticated tools for creative expression.',
+		shortDescription: 'projects.demiurg.shortDescription',
+		description: 'projects.demiurg.description',
 		links: [{ to: 'https://github.com/Lightios/Demiurg_Creator/', label: 'GitHub - Game Creator' }, { to: 'https://github.com/ushka1/project-demiurg/', label: 'GitHub - Game Interpreter'} ],
 		logo: Assets.Demiurg,
 		name: 'Demiurg',
@@ -135,10 +133,8 @@ export const items: Array<Project> = [
 	{
 		slug: 'daymath',
 		color: '#5e95e3',
-		shortDescription:
-			'Educational app for Polish students, featuring math quizzes, explanations, and animations, still in development.',
-		description:
-			'DayMath is a comprehensive educational application I developed independently during my university studies, targeting students in Polish primary and secondary schools. The app is designed to enhance mathematical learning through a variety of interactive features, including math quizzes, detailed textual explanations of various topics, and animations that visualize and clarify complex problems. These tools work together to provide an engaging and effective learning experience. Although the app is still a work in progress and has not been officially released, it represents my commitment to improving education through technology and my ongoing efforts to refine and expand its capabilities.',
+		shortDescription: 'projects.daymath.shortDescription',
+		description: 'projects.daymath.description',
 		links: [], // { to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }
 		logo: Assets.DayMath,
 		name: 'DayMath',
@@ -180,10 +176,8 @@ export const items: Array<Project> = [
 	{
 		slug: 'movie-ai',
 		color: '#a818b8',
-		shortDescription:
-			'Desktop app recommending movies based on user ratings, developed for a course on AI fundamentals with a colleague.',
-		description:
-			'The Movie Recommendation System is a desktop application created in collaboration with a colleague as part of a Fundamentals of Artificial Intelligence course. This app enables users to rate movies they have watched, and employs AI algorithms to recommend new movies tailored to their preferences. By analyzing user ratings and employing sophisticated recommendation techniques, the system provides personalized movie suggestions, enhancing the user’s viewing experience. This project highlights our practical application of AI principles and our ability to develop user-centric, intelligent software solutions.',
+		shortDescription: 'projects.movie-ai.shortDescription',
+		description: 'projects.movie-ai.description',
 		links: [{ to: 'https://github.com/Lightios/MovieRecommendationSystem', label: 'GitHub' }],
 		logo: Assets.Recommendation,
 		name: 'Movie Recommendation System',

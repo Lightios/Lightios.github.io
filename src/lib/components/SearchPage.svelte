@@ -5,6 +5,7 @@
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
+	import {t} from "../../services/i18n";
 
 	export let title = 'Title';
 	export let search = '';
@@ -50,7 +51,7 @@
 
 <CommonPage {title}>
 	<div class="w-100% row">
-		<Input bind:this={searchInput} bind:value={search} placeholder={'Search...'} />
+		<Input bind:this={searchInput} bind:value={search} placeholder={$t("SearchPlaceholder")} />
 	</div>
 	<div class="w-100% col flex-1">
 		<slot />

@@ -4,6 +4,7 @@
 	import { title } from '@data/projects';
 
 	import type { Project } from '$lib/types';
+	import {t} from "../../../services/i18n";
 
 	import CardLogo from '$lib/components/Card/CardLogo.svelte';
 	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
@@ -80,7 +81,7 @@
 			<div class="pt-3 pb-1 overflow-x-hidden w-full">
 				<div class="px-10px m-y-5">
 					{#if data.project.description}
-						<Markdown content={data.project.description} />
+						<Markdown content={$t(data.project.description)} />
 					{:else}
 						<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
 							<UIcon icon="i-carbon-text-font" classes="text-3.5em" />
