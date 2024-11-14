@@ -89,6 +89,12 @@ const Assets = {
 	Pillow: a("pillow.png"),
 	FPDF2: a("fpdf2.png"),
 	Manim: a("manim.png"),
+	Scheduler: a("scheduler.png"),
+	SubtitlesShifter: a("subtitles-shifter.png"),
+	GeneratorTabliczek: a("generator-tabliczek.png"),
+	YouTubeDownloader: a("youtube-downloader.png"),
+	BinaryClock: a("binary-clock.svg"),
+	TicTacToe: a("tic-tac-toe.png"),
 };
 
 export default Assets;
