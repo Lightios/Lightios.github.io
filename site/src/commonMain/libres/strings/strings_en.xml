@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="locale">en</string>
+    <string name="app_name">Website</string>
+    <string name="home_screen">Home</string>
+    <string name="education_screen">Education</string>
+    <string name="skills_screen">Skills</string>
+    <string name="experience_screen">Experience</string>
+    <string name="projects_screen">Projects</string>
+    <string name="project_details_screen">Project Details</string>
+    <string name="social_media_screen">Social Media</string>
+    <string name="achievements_screen">Achievements</string>
+
+    <string name="welcome_p1">Welcome to my</string>
+    <string name="welcome_p2">digital portfolio!</string>
+
+    <string name="homepage_description">I'm passionate about tech and focused on Android app development.</string>
+    <string name="homepage_tutor_website">My tutoring website</string>
+
+    <!-- COMMON -->
+    <string name="main">Main</string>
+    <string name="skills">Skills</string>
+    <string name="projects">Projects</string>
+    <string name="experience">Experience</string>
+    <string name="education">Education</string>
+    <string name="social_media">Social Media</string>
+    <string name="achievements">Achievements</string>
+    <string name="resume">Resumé</string>
+    <string name="no_results">Could not find anything...</string>
+    <string name="search_placeholder">Search...</string>
+    <string name="search">Search</string>
+
+    <!-- HOME -->
+    <string name="home_description">I am a passionate software developer with a focus on Android app development. Here, you can explore my skills, projects, and achievements.</string>
+    <string name="skills_description">I have a diverse skill set in software development, including expertise in various programming languages, frameworks, and tools. My focus is on creating efficient and user-friendly applications.</string>
+    <string name="projects_description">I have worked on a variety of projects, ranging from mobile applications to web development. Each project showcases my ability to solve complex problems and deliver high-quality software solutions.</string>
+    <string name="experience_description">With experience in both commercial and academic projects, I have honed my skills in software engineering, project management, and teamwork. I am committed to continuous learning and professional growth.</string>
+    <string name="education_description">I hold a Bachelor's degree in Computer Science from Jagiellonian University, where I gained a solid foundation in programming, algorithms, and software development methodologies.</string>
+    <string name="social_media_description">Connect with me on social media to stay updated on my latest projects, achievements, and insights into the world of software development.</string>
+    <string name="achievements_description">I have received several awards and recognitions for my contributions to software development and education. These achievements reflect my dedication to excellence and my passion for technology.</string>
+
+    <string name="skills_button">Skills</string>
+    <string name="projects_button">Projects</string>
+    <string name="experience_button">Experience</string>
+    <string name="education_button">Education</string>
+    <string name="social_media_button">Social Media</string>
+    <string name="achievements_button">Achievements</string>
+
+    <string name="view_more">View More</string>
+
+    <!-- SKILLS -->
+    <string name="skills_title">Technical Skills</string>
+    <string name="skills_subtitle">A collection of my programming languages, frameworks, and other technical skills.</string>
+
+    <string name="programming_languages">Programming Languages</string>
+    <string name="frameworks">Frameworks</string>
+    <string name="markup_style">Markup &amp; Style</string>
+    <string name="libraries">Libraries</string>
+    <string name="languages">Languages</string>
+
+    <string name="beginner">Beginner</string>
+    <string name="competent">Competent</string>
+    <string name="proficient">Proficient</string>
+    <string name="advanced">Advanced</string>
+    <string name="expert">Expert</string>
+    <string name="native">Native</string>
+    <string name="c1">C1</string>
+
+    <!-- PROJECTS -->
+    <string name="projects_title">Programming projects</string>
+    <string name="projects_subtitle">A collection of my programming projects, showcasing my skills and experience in software development.</string>
+
+    <string name="mobile_application">Mobile application</string>
+    <string name="web_application">Web application</string>
+    <string name="desktop_application">Desktop application</string>
+    <string name="multiplatform_application">Multiplatform application</string>
+    <string name="library">Library</string>
+    <string name="console_application">Console application</string>
+    <string name="game">Game</string>
+    <string name="other">Other</string>
+
+    <string name="commercial_project">Commercial</string>
+    <string name="academic_project">Academic</string>
+    <string name="tools_project">Tools</string>
+    <string name="practice_project">Practice</string>
+    <string name="personal_project">Personal</string>
+    <string name="project_overview">Project Overview</string>
+
+    <string name="screenshots">Screenshots</string>
+
+    <string name="projects_master_system_shortDescription">Application for managing tournaments with a custom algorithm</string>
+    <string name="projects_master_system_description">This tournament management application was developed on commission to facilitate competitive match play according to a client-specific algorithm. The app provides a user-friendly interface for entering match results, automatically pairs teams for the next round based on the algorithm, calculates points, and generates comprehensive PDF summaries of the tournament's progress. Additionally, it creates graphs to visually represent the algorithm's logic and outcomes. The application is translated into four languages using Python's gettext module, ensuring accessibility for a diverse user base. This project showcases my ability to deliver tailored, multilingual software solutions that meet specific client requirements and enhance the management of complex tournament structures.</string>
+    <string name="projects_vl_shortDescription">Valorant Lineups is a mobile app for Valorant players that helps them during gameplay</string>
+    <string name="projects_vl_description">Valorant Lineups is a mobile app created for Valorant players to assist them during gameplay. The app offers a wide collection of lineups, allowing players to execute advanced techniques without the need to memorize specific settings on the map. With this app, players can achieve better results in the game and climb higher ranks. It was the first app of its kind for Valorant available on the Play Store, achieving success with over 100,000 downloads. This project highlights my skills in delivering innovative and effective solutions.</string>
+    <string name="projects_demiurg_shortDescription">Demiurg is an application developed as part of a Software Engineering course, created by a team of five people.</string>
+    <string name="projects_demiurg_description">Demiurg is an application developed as part of a Software Engineering course, created by a team of five people. The project consists of two separate applications: a game creator and an interpreter for text-based games. The creator allows users to design complex game worlds with mechanics such as non-linear quests. It enables the creation of detailed interactive narratives, while the interpreter provides an immersive experience during gameplay. This project demonstrates my ability to work in a team and create independent yet cooperating programs.</string>
+    <string name="projects_daymath_shortDescription">DayMath is an educational application for Polish students, featuring math quizzes, explanations, and animations.</string>
+    <string name="projects_daymath_description">DayMath is an educational application designed for Polish primary and secondary school students. The app aims to enhance math learning through a variety of interactive features, including math quizzes, detailed text explanations of various topics, and animations that visualize and explain complex problems. These tools work together to provide an engaging and effective educational experience. It is my most advanced project, combining multiple technologies. The app itself is built in Kotlin, but the task texts required the use of LaTeX, which is well-supported in Python. The app also connects to Firebase, where users' learning progress is saved. This project highlights my commitment to developing my tutoring business and combines my skills in computer science, mathematics, education, and linguistics.</string>
+    <string name="projects_movie_ai_shortDescription">Desktop app recommending movies based on user ratings, developed in an AI fundamentals course.</string>
+    <string name="projects_movie_ai_description">The Movie Recommendation System is a desktop application created in collaboration with a colleague as part of a Fundamentals of Artificial Intelligence course. This app enables users to rate movies they have watched, and employs AI algorithms to recommend new movies tailored to their preferences. By analyzing user ratings and employing sophisticated recommendation techniques, the system provides personalized movie suggestions, enhancing the user’s viewing experience. This project highlights our practical application of AI principles and our ability to develop user-centric, intelligent software solutions.</string>
+    <string name="projects_generator_tabliczek_shortDescription">Application generating room number and name plates</string>
+    <string name="projects_generator_tabliczek_description">This application was created in collaboration with a colleague for a programming course in C#. It generates room number and name plates that can be printed and hung next to room doors. The application allows users to choose the font, logo, and text color. It also enables saving the project between sessions.</string>
+    <string name="projects_scheduler_shortDescription">Application for generating lesson schedules integrated with Discord.</string>
+    <string name="projects_scheduler_description">This application was created to facilitate the organization of my tutoring sessions. It allows me to easily add new lessons to the schedule. The application is integrated with Discord, enabling me to automatically send notifications about new lessons to my server. It also automatically retrieves the current day of the year and generates a schedule for the upcoming week, allowing the user to set the starting day (e.g., today or tomorrow). It also allows: <br/>-setting the start and end time <br/>-choosing a theme <br/>-classifying individual lessons (exercises, lectures, tutoring sessions (remote or in-person), one-time events, etc.) <br/>-listing dates.</string>
+    <string name="projects_binary_clock_shortDescription">Binary clock made using Compose Multiplatform</string>
+    <string name="projects_binary_clock_description">Binary clock made using Compose Multiplatform</string>
+    <string name="projects_subtitles_shifter_shortDescription">Simple script allowing to shift subtitles in .srt files</string>
+    <string name="projects_subtitles_shifter_description">Simple script allowing to shift subtitles in .srt files. It was created for my individual need to shift subtitles that did not match the movie version (were delayed by a few seconds forward or backward).</string>
+    <string name="projects_youtube_downloader_shortDescription">Multithreaded script allowing to download songs from YouTube</string>
+    <string name="projects_youtube_downloader_description">This application allows you to download a playlist from Spotify, via YouTube. It requires the user to export the playlist to a .csv file using the Exportify application, and then downloads the songs from YouTube in separate threads, searching for them by name and artist, and saving them in an organized way - creating folders with artists, and naming each song with its title.</string>
+    <string name="projects_tic_tac_toe_shortDescription">Simple Tic-Tac-Toe game that can be played with a friend on Discord</string>
+    <string name="projects_tic_tac_toe_description">Simple Tic-Tac-Toe game that can be played with a friend on Discord</string>
+    <string name="projects_crypto_tracker_shortDescription">App tracking cryptocurrency prices</string>
+    <string name="projects_crypto_tracker_description">App tracking cryptocurrency prices. It allows adding cryptocurrencies to track, and displays their current prices along with a chart of changes over the last 24 hours.</string>
+    <string name="projects_tutor_website_shortDescription">Website with my tutoring offer</string>
+    <string name="projects_tutor_website_description">This website was developed by me to showcase my tutoring offer in mathematics and computer science. It contains all the details regarding lessons, rates, reviews, and contact information. The site was built entirely using Jetpack Compose.</string>
+    <string name="projects_mobile_remote_shortDescription">Mobile remote control for computer media player</string>
+    <string name="projects_mobile_remote_description">This project consists of two applications - a client and a server, which are useful for watching movies. The server application runs on the computer, while the client runs on the phone. This allows you to control movie playback from your phone, such as pausing, fast-forwarding or rewinding, adjusting volume, and muting sound, while being away from the computer.</string>
+    <string name="projects_todo_list_shortDescription">Classic mobile app that allows you to save your todos</string>
+    <string name="projects_todo_list_description">Classic mobile app that allows you to save your todos. It enables creating, editing, and deleting tasks. Tasks have their own priority and completion date. Everything is saved offline on the device.</string>
+    <string name="projects_screenshot_processor_shortDescription">Application facilitating my work on the Valorant Lineups app</string>
+    <string name="projects_screenshot_processor_description">This application facilitates my work on the Valorant Lineups app. It allows for quick saving of in-game screenshots in folders, according to my own data structure for this app. It has a list of skills for each agent, a map index, and types of screenshots.</string>
+    <string name="projects_website_shortDescription">My Portfolio Website</string>
+    <string name="projects_website_description">My portfolio website, which you are currently browsing. I created it solely using Kobweb.</string>
+
+    <string name="projects_days_counter_shortDescription">Application for counting days between dates</string>
+    <string name="projects_days_counter_description"> Application for counting days between dates. It can be run as a mobile app on Android, desktop, or web. It allows users to save any number of date pairs, between which it calculates: the number of days that have passed, and the number of days remaining.</string>
+
+    <string name="projects_tic_tac_toe_kotlin_shortDescription">Client and server for Tic-Tac-Toe game over a local network</string>
+    <string name="projects_tic_tac_toe_kotlin_description">Client and server for Tic-Tac-Toe game over a local network. The client can be run as a desktop, web, or mobile app on Android. Created using sockets. It provides type-safe message handling and verification.</string>
+
+    <string name="projects_math_tools_shortDescription">Application facilitating remote math tutoring</string>
+    <string name="projects_math_tools_description">Application facilitating remote math tutoring. It draws necessary objects such as tables, coordinate systems, chessboards, solids (pyramids and prisms with various bases). It allows for easy copying to the clipboard with a transparent background, enabling direct pasting into any graphic program used for tutoring.</string>
+
+    <string name="projects_function_solver_shortDescription">Application for practicing reading function properties from graphs</string>
+    <string name="projects_function_solver_description">Application for practicing reading function properties from graphs. Created for high school graduates. It allows for effective learning of tasks in this topic, thoroughly preparing for the graduation exam. The app generates graphs, allows inputting answers, checks them, and provides correct solutions. Answers are always simplified to the simplest form, even in the case of piecewise functions.</string>
+    <!-- EXPERIENCE -->
+    <string name="experience_title">Experience</string>
+    <string name="experience_subtitle">A collection of my professional experience, including tutoring and app development.</string>
+
+    <string name="experience_tutor_title">Math Tutor</string>
+    <string name="experience_tutor_responsibility_1">Conducting private 1-on-1 lessons with students</string>
+    <string name="experience_tutor_responsibility_2">Preparing students for high school graduation and eighth-grade exams</string>
+    <string name="experience_tutor_responsibility_3">Creating learning materials using LaTeX and Manim</string>
+
+
+    <string name="experience_app_developer_title">Commercial App Developer</string>
+    <string name="experience_app_developer_responsibility_1">Creating my own mobile applications for Android</string>
+    <string name="experience_app_developer_responsibility_2">Developing applications based on user needs</string>
+
+    <string name="students_taught">Students taught</string>
+    <string name="rating">Rating</string>
+    <string name="reviews">Reviews</string>
+    <string name="apps_published">Apps published</string>
+    <string name="total_downloads">Total downloads</string>
+
+    <string name="home">Home</string>
+    <string name="self_employed">Self-employed</string>
+    <string name="commercial">Commercial</string>
+
+    <string name="primary_technologies">Primary Technologies</string>
+
+    <!-- EDUCATION -->
+    <string name="education_title">Education</string>
+    <string name="education_subtitle">A collection of my education, including my Bachelor's degree and high school.</string>
+
+    <string name="education_uj_degree">Bachelor degree of Computer Science</string>
+    <string name="education_uj_organization">Jagiellonian University</string>
+    <string name="education_zsz_degree">IT Technician</string>
+    <string name="education_zsz_organization">Zespół Szkół Zawodowych w Przeworsku</string>
+    <string name="Poland">Poland</string>
+
+    <string name="Algebra">Algebra</string>
+    <string name="ComputerOrganizationAndArchitecture">Computer Organization and Architecture</string>
+    <string name="Programming">Programming</string>
+    <string name="LogicAndSetTheory">Logic and Set Theory</string>
+    <string name="MathematicalAnalysis">Mathematical Analysis</string>
+    <string name="ProgrammingMethods">Programming Methods</string>
+    <string name="OperatingSystems">Operating Systems</string>
+    <string name="AlgorithmsAndDataStructures">Algorithms and Data Structures</string>
+    <string name="DiscreteMathematics">Discrete Mathematics</string>
+    <string name="Databases">Databases</string>
+    <string name="SoftwareEngineering">Software Engineering</string>
+    <string name="ProbabilityAndStatistics">Probability and Statistics</string>
+    <string name="ComputerNetworks">Computer Networks</string>
+    <string name="FormalLanguagesAndAutomata">Formal Languages and Automata</string>
+    <string name="NumericalMethods">Numerical Methods</string>
+    <string name="FunctionalProgramming">Functional Programming</string>
+    <string name="AndroidProgramming">Android Programming</string>
+    <string name="DesignPatterns">Design Patterns</string>
+    <string name="CSharpProgramming">C# Programming</string>
+    <string name="CognitiveSystems">Cognitive Systems</string>
+    <string name="CognitiveScience">Cognitive Science</string>
+    <string name="WebProgramming">Web Programming</string>
+    <string name="FundamentalsOfAI">Fundamentals of AI</string>
+    <string name="English">English</string>
+    <string name="Networking">Networking</string>
+    <string name="HardwareMaintenance">Hardware Maintenance</string>
+
+    <string name="CertificateCCNARoutingAndSwitchingIntroductionToNetworks">Certificate: CCNA Routing and Switching: Introduction to Networks</string>
+    <string name="CertificatePCAPProgrammingEssentialsInPython">Certificate: PCAP: Programming Essentials in Python</string>
+    <string name="CertificateNDGLinuxUnhatched">Certificate: NDG Linux Unhatched</string>
+    <string name="CertificateIntroductionToCybersecurity">Certificate: Introduction to Cybersecurity</string>
+    <string name="CertificateCybersecurityEssentials">Certificate: Cybersecurity Essentials</string>
+    <string name="CertificateBeYourOwnBoss">Certificate: Be Your Own Boss</string>
+    <string name="CertificateGetConnected">Certificate: Get Connected</string>
+    <string name="CertificateIntroductionToTheInternetOfEverything">Certificate: Introduction to the Internet of Everything</string>
+    <string name="Certificate3dsMaxAnimation">Certificate: 3ds Max Animation</string>
+    <string name="Certificate3dsMaxVisualisation">Certificate: 3ds Max Visualisation</string>
+    <string name="Certificate3dsMaxModeling">Certificate: 3ds Max Modeling</string>
+    <string name="CertificateEUCodeWeek">Certificate: EU Code Week</string>
+    <string name="CertificateCPAProgrammingEssentialsInCPlusPlus">Certificate: CPA: Programming Essentials in C++</string>
+
+    <string name="programming_and_software_engineering">Programming and Software Engineering</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="systems_and_computer_technology">Systems and Computer Technology</string>
+    <string name="ai_and_cognitive_science">AI and Cognitive Science</string>
+
+    <string name="courses">Courses</string>
+    <string name="professional_certificates">Professional Certificates</string>
+
+    <plurals name="n_courses">
+        <item quantity="one">${count} course</item>
+        <item quantity="other">${count} courses</item>
+    </plurals>
+
+    <plurals name="n_certificates">
+        <item quantity="one">${count} certificate</item>
+        <item quantity="other">${count} certificates</item>
+    </plurals>
+    <!-- ACHIEVEMENTS -->
+    <string name="achievements_title">Achievements</string>
+    <string name="achievements_subtitle">A collection of my achievements, including awards and recognitions in various contests.</string>
+
+    <string name="programming_competitions">Programming Competitions</string>
+    <string name="math_competitions">Math Competitions</string>
+    <string name="scholarships">Scholarships</string>
+    <string name="other_achievements">Other Achievements</string>
+
+    <string name="FirstPlaceInTheIndependenceDictationContest">1st Place in the Independence Dictation Contest</string>
+    <string name="PrzeworskCountyScholarship">Przeworsk County Scholarship</string>
+    <string name="FirstPlaceInTheExpertGroupAtThePix2019ContestNationalSchoolProgrammingChampionship">1st Place in the EXPERT Group at the PIX 2019 Contest - National School Programming Championship</string>
+    <string name="QualificationToTheSemiFinalsOfThePolishEditionOfTheInternationalPixProgrammingChallenge">Qualification to the Semi-Finals of the Polish Edition of the International Pix Programming Challenge</string>
+    <string name="HonorableMentionInTheNationalHistoryContestKrag">Honorable Mention in the National History Contest "Krąg"</string>
+    <string name="SecondPlaceInThe24thProfJanMarszalMathematicsContestForMiddleSchools">2nd Place in the 24th Prof. Jan Marszał Mathematics Contest for Middle Schools</string>
+    <string name="FirstPlaceInTheSchoolProgrammingContest">1st Place in the School Programming Contest</string>
+    <string name="HonorableMentionInThe15thDistrictMathContestProcent">Honorable Mention in the 15th District Math Contest "Procent"</string>
+    <string name="FirstPlaceInThe14thDistrictMathContestForSecondYearMiddleSchoolStudents">1st Place in the 14th District Math Contest for Second-Year Middle School Students</string>
+    <string name="SecondPlaceInTheSchoolEnglishContest">2nd Place in the School English Contest</string>
+    <string name="HonorableMentionInTheInternationalMathContestKangurMatematyczny">Honorable Mention in the International Math Contest "Kangur Matematyczny"</string>
+
+    <string name="first_place">1st place</string>
+    <string name="school">School</string>
+    <string name="regional">Regional</string>
+    <string name="national">National</string>
+    <string name="international">International</string>
+    <string name="district">District</string>
+
+    <plurals name="n_achievements">
+        <item quantity="one">${count} achievement</item>
+        <item quantity="other">${count} achievements</item>
+    </plurals>
+
+    <!-- SOCIAL MEDIA -->
+    <string name="social_media_title">Social Media</string>
+    <string name="social_media_subtitle">Connect with me on social media to watch all my educational animations.</string>
+
+
+
+    <!-- Time -->
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+    <string name="now">Now</string>
+    <plurals name="n_years">
+        <item quantity="one">${count} year</item>
+        <item quantity="other">${count} years</item>
+    </plurals>
+
+</resources>
