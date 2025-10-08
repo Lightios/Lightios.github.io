@@ -161,7 +161,7 @@ fun NavHeader() {
 
 
 
-            ColorModeButton()
+//            ColorModeButton()
             HamburgerButton(onClick =  { menuState = SideMenuState.OPEN })
 
             if (menuState != SideMenuState.CLOSED) {
@@ -186,13 +186,13 @@ private fun SideMenu(menuState: SideMenuState, close: () -> Unit, onAnimationEnd
             Column(
                 Modifier
                     .fillMaxHeight()
-                    .width(clamp(8.cssRem, 33.percent, 10.cssRem))
+                    .width(clamp(8.cssRem, 33.percent, 20.cssRem))
                     .align(Alignment.CenterEnd)
                     // Close button will appear roughly over the hamburger button, so the user can close
                     // things without moving their finger / cursor much.
                     .padding(top = 1.cssRem, leftRight = 1.cssRem)
                     .gap(1.5.cssRem)
-                    .backgroundColor(ColorMode.current.toSitePalette().nearBackground)
+                    .backgroundColor(ColorMode.current.toSitePalette().surface)
                     .animation(
                         SideMenuSlideInAnim.toAnimation(
                             duration = 200.ms,

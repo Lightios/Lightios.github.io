@@ -13,10 +13,13 @@ import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
 import com.varabyte.kobweb.compose.ui.modifiers.fontSize
 import com.varabyte.kobweb.compose.ui.modifiers.fontWeight
+import com.varabyte.kobweb.compose.ui.modifiers.gap
 import com.varabyte.kobweb.compose.ui.modifiers.height
 import com.varabyte.kobweb.compose.ui.modifiers.margin
 import com.varabyte.kobweb.compose.ui.modifiers.padding
 import com.varabyte.kobweb.compose.ui.toAttrs
+import com.varabyte.kobweb.silk.components.layout.SimpleGrid
+import com.varabyte.kobweb.silk.components.layout.numColumns
 import com.varabyte.kobweb.silk.theme.SilkTheme
 import com.varabyte.kobweb.silk.theme.colors.palette.background
 import com.varabyte.kobweb.silk.theme.colors.palette.color
@@ -47,10 +50,15 @@ fun ExperienceScreen() {
             subtitle = Res.string.experience_subtitle,
         )
 
-        for (experience in experiences) {
-            ExperienceCard(
-                experience = experience,
-            )
+        SimpleGrid(
+            numColumns(1, md=2),
+            modifier = Modifier.gap(20.px),
+        ) {
+            for (experience in experiences) {
+                ExperienceCard(
+                    experience = experience,
+                )
+            }
         }
     }
 }

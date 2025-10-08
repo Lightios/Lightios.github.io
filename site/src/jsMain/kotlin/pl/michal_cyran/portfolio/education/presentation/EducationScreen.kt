@@ -9,7 +9,10 @@ import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxHeight
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.gap
 import com.varabyte.kobweb.compose.ui.modifiers.width
+import com.varabyte.kobweb.silk.components.layout.SimpleGrid
+import com.varabyte.kobweb.silk.components.layout.numColumns
 import com.varabyte.kobweb.silk.style.toAttrs
 import com.varabyte.kobweb.silk.style.toModifier
 import org.jetbrains.compose.web.css.percent
@@ -36,16 +39,13 @@ fun EducationScreen() {
             subtitle = Res.string.education_subtitle,
         )
 
-        Row(
-            modifier = Modifier
-                .fillMaxWidth(100.percent),
-            horizontalArrangement = Arrangement.spacedBy(60.px)
+        SimpleGrid(
+            numColumns(1, md=2),
+            modifier = Modifier.gap(40.px)
         ) {
-
             for (education in education) {
                 EducationCard(
                     education = education,
-                    modifier = Modifier.width(50.percent)
                 )
             }
         }

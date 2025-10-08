@@ -17,6 +17,8 @@ import com.varabyte.kobweb.compose.ui.modifiers.objectFit
 import com.varabyte.kobweb.compose.ui.modifiers.padding
 import com.varabyte.kobweb.compose.ui.modifiers.size
 import com.varabyte.kobweb.silk.components.graphics.Image
+import com.varabyte.kobweb.silk.components.layout.SimpleGrid
+import com.varabyte.kobweb.silk.components.layout.numColumns
 import com.varabyte.kobweb.silk.style.toModifier
 import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
@@ -149,10 +151,9 @@ fun ProjectDetailsScreen(
             }
         }
 
-        Row(
+        SimpleGrid(
+            numColumns(3, md = 6),
             modifier = CardStyle.toModifier().fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(16.px),
-            verticalAlignment = Alignment.CenterVertically
         ) {
             project.skills.forEach { slug ->
                 val skill = skillsBySlug[slug]!!
@@ -181,13 +182,7 @@ fun ProjectDetailsScreen(
                             skill.name,
                         )
                     }
-
-
                 }
-
-                Box(
-                    modifier = Modifier.height(8.px)
-                )
             }
         }
     }

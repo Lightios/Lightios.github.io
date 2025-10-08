@@ -57,7 +57,6 @@ fun ExperienceCard(
        backgroundContainer.toModifier()
            .then(CardStyle.toModifier())
 //           .then(EducationCardStyle.toModifier())
-            .fillMaxWidth(100.percent)
             .margin(topBottom = 40.px),
     ) {
         Column(

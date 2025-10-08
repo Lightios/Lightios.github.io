@@ -11,9 +11,12 @@ import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.color
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.gap
 import com.varabyte.kobweb.compose.ui.modifiers.padding
 import com.varabyte.kobweb.compose.ui.modifiers.size
 import com.varabyte.kobweb.compose.ui.modifiers.width
+import com.varabyte.kobweb.silk.components.layout.SimpleGrid
+import com.varabyte.kobweb.silk.components.layout.numColumns
 import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.dom.H3
@@ -53,17 +56,14 @@ fun SkillSection(
                 }
             }
 
-            for (i in filteredSkills.indices step 3) {
-                Row(
-                    horizontalArrangement = Arrangement.spacedBy(16.px),
-                    modifier = Modifier.fillMaxWidth().padding(topBottom = 20.px)
-                ) {
-                    filteredSkills.subList(i, (i + 3).coerceAtMost(filteredSkills.size)).forEach { skill ->
-                        SkillCard(
-                            skill = skill,
-                            modifier = Modifier.width(33.percent)
-                        )
-                    }
+            SimpleGrid(
+                numColumns(2, md=3),
+                modifier = Modifier.gap(20.px),
+            ) {
+                filteredSkills.forEach { skill ->
+                    SkillCard(
+                        skill = skill,
+                    )
                 }
             }
         }
