@@ -160,7 +160,7 @@ fun NavHeader() {
             var menuState by remember { mutableStateOf(SideMenuState.CLOSED) }
 
 
-
+            LanguageDropdown()
 //            ColorModeButton()
             HamburgerButton(onClick =  { menuState = SideMenuState.OPEN })
 

@@ -57,7 +57,7 @@ fun SkillSection(
             }
 
             SimpleGrid(
-                numColumns(2, md=3),
+                numColumns(1, md=3),
                 modifier = Modifier.gap(20.px),
             ) {
                 filteredSkills.forEach { skill ->
