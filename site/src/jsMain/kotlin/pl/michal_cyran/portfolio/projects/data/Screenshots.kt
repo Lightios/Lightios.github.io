@@ -5,7 +5,7 @@ import pl.michal_cyran.portfolio.projects.domain.Screenshot
 val path = "screenshots/"
 
 fun generateScreenshotPath(name: String, index: Int): String {
-    return "${path}ss_${name}_$index.png"
+    return "${path}/${name}/$index.png"
 }
 
 
@@ -60,10 +60,10 @@ val generatorTabliczekScreenshots = generateScreenshots(
 )
 
 val schedulerLabels = listOf(
-    "Ekran główny",
-    "Ustawienia",
-    "Integracja z Discordem",
-    "Wyniki"
+    "Przykładowy grafik",
+    "Dane",
+    "Parametry",
+    "Integracja z Discordem"
 )
 val schedulerScreenshots = generateScreenshots(
     name = "scheduler",
@@ -93,4 +93,69 @@ val vlLabels = listOf(
 val valorantLineupsScreenshots = generateScreenshots(
     name = "vl",
     labels = vlLabels
+)
+
+val mathToolsLabels = listOf(
+    "Graniastosłupy",
+    "Układ współrzędnych",
+    "Zegar",
+    "Szachownica",
+    "Tabelka",
+    "Bryły obrotowe",
+    "Wykres funkcji",
+)
+
+val mathToolsScreenshots = generateScreenshots(
+    name = "math_tools",
+    labels = mathToolsLabels
+)
+
+val maturaTasksHubLabels = listOf(
+    "Filtry",
+    "Zadanie z załącznikiem",
+    "Działy",
+    "Zadania prawda/fałsz",
+)
+
+val maturaTasksHubScreenshots = generateScreenshots(
+    name = "matura_tasks_hub",
+    labels = maturaTasksHubLabels
+)
+
+val functionSolverLabels = listOf(
+    "Ekran główny",
+)
+
+val functionSolverScreenshots = generateScreenshots(
+    name = "function_solver",
+    labels = functionSolverLabels
+)
+
+val mobileRemoteLabels = listOf(
+    "Ekran główny - klient",
+)
+
+val mobileRemoteScreenshots = generateScreenshots(
+    name = "mobile_remote",
+    labels = mobileRemoteLabels
+)
+
+val toDoListLabels = listOf(
+    "Lista zadań",
+    "Dodawanie zadania",
+    "Szczegóły zadania",
+    "Brak zadań",
+)
+
+val toDoListScreenshots = generateScreenshots(
+    name = "to_do_list",
+    labels = toDoListLabels
+)
+val daysCounterLabels = listOf(
+    "Ekran główny",
+)
+
+val daysCounterScreenshots = generateScreenshots(
+    name = "days_counter",
+    labels = daysCounterLabels
 )

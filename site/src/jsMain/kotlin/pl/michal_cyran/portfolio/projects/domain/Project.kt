@@ -10,6 +10,7 @@ data class Project (
     val category: ProjectCategory,
     val links: List<ProjectLink> = emptyList(),
     val screenshots: List<Screenshot> = emptyList(),
+    val isImportant: Boolean = false,
 ) {
     val slug = name.lowercase().replace(" ", "-")
 }

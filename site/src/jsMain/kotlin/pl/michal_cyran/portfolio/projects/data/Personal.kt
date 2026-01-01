@@ -20,35 +20,37 @@ val personal = listOf(
                 type = ProjectLinkType.WEBSITE,
             ),
             ProjectLink(
-                to = "",
-                type = ProjectLinkType.WEBSITE,
+                to = "https://github.com/Lightios/FunctionSolver",
+                type = ProjectLinkType.GITHUB,
             )
         ),
         category = ProjectCategory.PERSONAL,
-        screenshots = emptyList()
+        screenshots = functionSolverScreenshots,
+        isImportant = true,
     ),
 
     Project(
         name = "Math Tools",
         description = Res.string.projects_math_tools_description,
         shortDescription = Res.string.projects_math_tools_shortDescription,
-        logo = "chart_data.svg",
+        logo = "build.svg",
         skills = listOf("kotlin", "jetpack_compose"),
         type = ProjectType.DESKTOP_APPLICATION,
         links = listOf(
             ProjectLink(
-                to = "",
+                to = "https://github.com/Lightios/MathTools",
                 type = ProjectLinkType.GITHUB,
             ),
         ),
         category = ProjectCategory.PERSONAL,
-        screenshots = emptyList()
+        screenshots = mathToolsScreenshots,
+        isImportant = true,
     ),
     Project(
         name = "Mobile Remote",
         description = Res.string.projects_mobile_remote_description,
         shortDescription = Res.string.projects_mobile_remote_shortDescription,
-        logo = "chart_data.svg",
+        logo = "remote_gen.svg",
         skills = listOf("kotlin", "jetpack_compose", "spring_boot", "ktor"),
         type = ProjectType.OTHER,
         links = listOf(
@@ -62,15 +64,32 @@ val personal = listOf(
             ),
         ),
         category = ProjectCategory.PERSONAL,
-        screenshots = emptyList()
+        screenshots = mobileRemoteScreenshots,
+    ),
+
+    Project(
+        name = "Portfolio",
+        description = Res.string.projects_website_description,
+        shortDescription = Res.string.projects_website_shortDescription,
+        logo = "business_center.svg",
+        skills = listOf("kotlin", "kobweb"),
+        type = ProjectType.WEB_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "https://github.com/Lightios/Website",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PERSONAL,
+        isImportant = true,
     ),
 
     Project(
         name = "Tutor Website",
         description = Res.string.projects_tutor_website_description,
         shortDescription = Res.string.projects_tutor_website_shortDescription,
-        logo = "chart_data.svg",
-        skills = listOf("kotlin", "jetpack_compose"),
+        logo = "sell.svg",
+        skills = listOf("kotlin", "kobweb"),
         type = ProjectType.WEB_APPLICATION,
         links = listOf(
             ProjectLink(
@@ -83,14 +102,30 @@ val personal = listOf(
             )
         ),
         category = ProjectCategory.PERSONAL,
-        screenshots = emptyList()
+    ),
+
+    Project(
+        name = "Scheduler",
+        description = Res.string.projects_screenshot_processor_description,
+        shortDescription = Res.string.projects_scheduler_shortDescription,
+        logo = "calendar_clock.svg",
+        skills = listOf("python", "pillow"),
+        type = ProjectType.CONSOLE,
+        links = listOf(
+            ProjectLink(
+                to = "https://github.com/Lightios/CalicoCompanion",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PERSONAL,
+        screenshots = schedulerScreenshots,
     ),
 
     Project(
         name = "Screenshot Processor",
         description = Res.string.projects_screenshot_processor_description,
         shortDescription = Res.string.projects_screenshot_processor_shortDescription,
-        logo = "chart_data.svg",
+        logo = "screenshot_monitor.svg",
         skills = listOf("kotlin", "jetpack_compose"),
         type = ProjectType.DESKTOP_APPLICATION,
         links = listOf(
@@ -103,26 +138,10 @@ val personal = listOf(
         screenshots = emptyList()
     ),
     Project(
-        name = "Portfolio",
-        description = Res.string.projects_website_description,
-        shortDescription = Res.string.projects_website_shortDescription,
-        logo = "chart_data.svg",
-        skills = listOf("kotlin", "jetpack_compose", "kobweb"),
-        type = ProjectType.WEB_APPLICATION,
-        links = listOf(
-            ProjectLink(
-                to = "https://github.com/Lightios/Website",
-                type = ProjectLinkType.GITHUB,
-            ),
-        ),
-        category = ProjectCategory.PERSONAL,
-        screenshots = emptyList()
-    ),
-    Project(
         name = "YouTube Downloader",
         description = Res.string.projects_youtube_downloader_description,
         shortDescription = Res.string.projects_youtube_downloader_shortDescription,
-        logo = "chart_data.svg",
+        logo = "genres.svg",
         skills = listOf("python"),
         type = ProjectType.CONSOLE,
         links = listOf(
@@ -135,12 +154,28 @@ val personal = listOf(
         screenshots = emptyList()
     ),
 
+    Project(
+        name = "Calico Companion",
+        description = Res.string.projects_calico_companion_description,
+        shortDescription = Res.string.projects_calico_companion_shortDescription,
+        logo = "paw.svg",
+        skills = listOf("kotlin", "jetpack_compose"),
+        type = ProjectType.MOBILE_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "https://github.com/Lightios/CalicoCompanion",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PERSONAL,
+        screenshots = emptyList()
+    ),
 
     Project(
         name = "Subtitles Shifter",
         description = Res.string.projects_subtitles_shifter_description,
         shortDescription = Res.string.projects_subtitles_shifter_shortDescription,
-        logo = "chart_data.svg",
+        logo = "subtitles_gear.svg",
         skills = listOf("python"),
         type = ProjectType.CONSOLE,
         links = listOf(

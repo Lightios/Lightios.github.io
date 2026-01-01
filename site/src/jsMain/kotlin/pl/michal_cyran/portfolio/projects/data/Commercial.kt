@@ -22,6 +22,7 @@ val commercialProjects = listOf(
         ),
         category = ProjectCategory.COMMERCIAL,
         screenshots = valorantLineupsScreenshots,
+        isImportant = true,
     ),
     Project(
         name = "DayMath",
@@ -37,8 +38,10 @@ val commercialProjects = listOf(
             )
         ),
         category = ProjectCategory.COMMERCIAL,
-        screenshots = daymathScreenshots
+        screenshots = daymathScreenshots,
+        isImportant = true,
     ),
+
     Project(
         name = "Master System",
         description = Res.string.projects_master_system_description,
@@ -50,4 +53,22 @@ val commercialProjects = listOf(
         category = ProjectCategory.COMMERCIAL,
         screenshots = masterSystemScreenshots,
     ),
+
+    Project(
+        name = "Matura Tasks Hub",
+        description = Res.string.projects_matura_tasks_hub_description,
+        shortDescription = Res.string.projects_matura_tasks_hub_shortDescription,
+        logo = "book.svg",
+        skills = listOf("kotlin", "kobweb", "python", "latex"),
+        type = ProjectType.WEB_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "https://srv97869.seohost.com.pl//",
+                type = ProjectLinkType.WEBSITE,
+            )
+        ),
+        category = ProjectCategory.COMMERCIAL,
+        screenshots = maturaTasksHubScreenshots,
+        isImportant = true,
+    )
 )

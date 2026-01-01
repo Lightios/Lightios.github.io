@@ -22,6 +22,7 @@ import com.varabyte.kobweb.compose.ui.modifiers.gap
 import com.varabyte.kobweb.compose.ui.modifiers.gridTemplateColumns
 import com.varabyte.kobweb.compose.ui.modifiers.left
 import com.varabyte.kobweb.compose.ui.modifiers.margin
+import com.varabyte.kobweb.compose.ui.modifiers.maxHeight
 import com.varabyte.kobweb.compose.ui.modifiers.objectFit
 import com.varabyte.kobweb.compose.ui.modifiers.opacity
 import com.varabyte.kobweb.compose.ui.modifiers.overflow
@@ -38,10 +39,12 @@ import com.varabyte.kobweb.silk.style.selectors.hover
 import org.jetbrains.compose.web.css.DisplayStyle
 import org.jetbrains.compose.web.css.LineStyle
 import org.jetbrains.compose.web.css.Position
+import org.jetbrains.compose.web.css.cssRem
 import org.jetbrains.compose.web.css.deg
 import org.jetbrains.compose.web.css.fr
 import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.css.s
+import org.jetbrains.compose.web.css.vh
 
 val ScreenshotsGridStyle = CssStyle.base {
     Modifier
@@ -54,6 +57,7 @@ val ScreenshotCardStyle = CssStyle {
     base {
         Modifier
             .position(Position.Relative)
+            .maxHeight(100.vh)
             .borderRadius(16.px)
             .overflow(Overflow.Hidden)
             .background(Color.rgba(15, 23, 42, 0.8f))

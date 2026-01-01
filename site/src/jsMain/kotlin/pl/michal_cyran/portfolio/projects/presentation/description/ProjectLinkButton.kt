@@ -22,7 +22,7 @@ fun ProjectLinkButton(
         ProjectLinkType.GITHUB -> "github.png"
         ProjectLinkType.GOOGLE_PLAY -> "google_play.png"
         ProjectLinkType.APP_STORE -> "app_store.png"
-        ProjectLinkType.WEBSITE -> "website.png"
+        ProjectLinkType.WEBSITE -> "web.svg"
         ProjectLinkType.OTHER -> "link.png"
     }
 

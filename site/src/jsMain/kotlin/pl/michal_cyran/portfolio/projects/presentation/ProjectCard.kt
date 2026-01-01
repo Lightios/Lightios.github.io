@@ -17,6 +17,7 @@ import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.graphics.Colors
 import com.varabyte.kobweb.compose.ui.modifiers.border
 import com.varabyte.kobweb.compose.ui.modifiers.borderRadius
+import com.varabyte.kobweb.compose.ui.modifiers.color
 import com.varabyte.kobweb.compose.ui.modifiers.cursor
 import com.varabyte.kobweb.compose.ui.modifiers.display
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxHeight
@@ -31,10 +32,13 @@ import com.varabyte.kobweb.compose.ui.modifiers.padding
 import com.varabyte.kobweb.compose.ui.modifiers.pointerEvents
 import com.varabyte.kobweb.compose.ui.modifiers.size
 import com.varabyte.kobweb.compose.ui.modifiers.textOverflow
+import com.varabyte.kobweb.compose.ui.modifiers.title
 import com.varabyte.kobweb.compose.ui.modifiers.whiteSpace
 import com.varabyte.kobweb.compose.ui.toAttrs
 import com.varabyte.kobweb.silk.components.forms.Button
 import com.varabyte.kobweb.silk.components.graphics.Image
+import com.varabyte.kobweb.silk.components.icons.fa.FaStar
+import com.varabyte.kobweb.silk.components.icons.fa.IconStyle
 import com.varabyte.kobweb.silk.components.layout.HorizontalDivider
 import com.varabyte.kobweb.silk.style.toModifier
 import org.jetbrains.compose.web.css.DisplayStyle
@@ -92,6 +96,17 @@ fun ProjectCard(
                 TypeBadge(
                     type = project.type
                 )
+
+                Spacer()
+
+                if (project.isImportant) {
+                    FaStar(
+                        modifier = Modifier
+                            .color(Colors.Gold)
+                            .title("Ważny projekt"),
+                        style = IconStyle.FILLED
+                    )
+                }
             }
 
 
@@ -146,7 +161,6 @@ fun ProjectCard(
                                 .border(color = Colors.Cyan, width = 1.px)
                                 .objectFit(ObjectFit.Contain)
                                 .borderRadius(8.px)
-//                                .then(backgroundContainer.toModifier())
                         )
                     }
                 }
