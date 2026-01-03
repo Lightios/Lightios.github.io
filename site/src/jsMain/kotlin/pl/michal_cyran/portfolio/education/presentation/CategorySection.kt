@@ -22,6 +22,7 @@ import com.varabyte.kobweb.silk.style.toAttrs
 import com.varabyte.kobweb.silk.style.toModifier
 import org.jetbrains.compose.web.css.cssRem
 import org.jetbrains.compose.web.css.px
+import org.jetbrains.compose.web.dom.H3
 import org.jetbrains.compose.web.dom.H5
 import org.jetbrains.compose.web.dom.Li
 import org.jetbrains.compose.web.dom.Text
@@ -41,29 +42,16 @@ fun CategorySection(
     Column(
         modifier = modifier,
     ) {
-        Box(
-            modifier = secondaryContainer.toModifier()
-                .fontSize(1.cssRem)
-                .fontWeight(600)
-                .padding(12.px, 20.px)
-                .borderRadius(12.px)
-                .textTransform(TextTransform.None)
-                .letterSpacing(0.3.px)
-                .boxShadow(0.px, 4.px, 12.px, 0.px, Color.rgba(0, 0, 0, 0.3f))
-                .margin(bottom = 16.px)
+        H3(
+            Modifier
+                .color(categoryToColor(category))
+                .padding(bottom = 0.5.cssRem)
+                .margin(0.px)
+                .toAttrs()
         ) {
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.fillMaxSize()
-            ) {
-                H5(
-                    Modifier.color(categoryToColor(category)).toAttrs()
-                ) {
-                    Text(category.displayName)
-                }
-
-            }
+            Text(category.displayName)
         }
+
         Ul(
             ListStyle.toAttrs {  }
         ) {

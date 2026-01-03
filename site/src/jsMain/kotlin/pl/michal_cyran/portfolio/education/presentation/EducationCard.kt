@@ -2,6 +2,7 @@ package pl.michal_cyran.portfolio.education.presentation
 
 import Res
 import androidx.compose.runtime.Composable
+import com.varabyte.kobweb.compose.css.TextAlign
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
@@ -19,6 +20,7 @@ import com.varabyte.kobweb.compose.ui.modifiers.margin
 import com.varabyte.kobweb.compose.ui.modifiers.padding
 import com.varabyte.kobweb.compose.ui.modifiers.position
 import com.varabyte.kobweb.compose.ui.modifiers.size
+import com.varabyte.kobweb.compose.ui.modifiers.textAlign
 import com.varabyte.kobweb.compose.ui.modifiers.zIndex
 import com.varabyte.kobweb.compose.ui.toAttrs
 import com.varabyte.kobweb.silk.components.graphics.Image
@@ -54,22 +56,27 @@ fun EducationCard(
         modifier = modifier
             .then(backgroundContainer.toModifier())
             .then(EducationCardStyle.toModifier()),
-//        colors = CardDefaults.cardColors(
-//            containerColor = MaterialTheme.colorScheme.surfaceContainer,
-//            contentColor = MaterialTheme.colorScheme.onSurface,
-//        ),
-//        shape = RoundedCornerShape(16.dp),
-//        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
     ) {
         Column(
-            modifier = Modifier.padding(24.px)
+            modifier = Modifier
+                .padding(
+                    leftRight = 1.cssRem,
+                    topBottom = 2.cssRem
+                )
                 .fillMaxWidth()
         ) {
             Row(
                 horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .fillMaxWidth()
             ) {
-                H2 {
+                H2(
+                    Modifier
+                        .fillMaxWidth()
+                        .textAlign(TextAlign.Center)
+                        .toAttrs {  }
+                ) {
                     Text(
                         education.title,
                     )
@@ -81,7 +88,7 @@ fun EducationCard(
                 modifier = Modifier
                     .padding(bottom = 8.px)
                     .display(DisplayStyle.Flex)
-                    .gap(24.px)
+                    .gap(2.cssRem)
                     .position(Position.Relative)
                     .zIndex(1)
                     .margin(bottom = 24.px)
@@ -103,44 +110,57 @@ fun EducationCard(
                 }
             }
 
-            // Duration and location
             Row(
                 verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(5.px),
+                horizontalArrangement = Arrangement.spacedBy(2.cssRem),
                 modifier = Modifier.padding(bottom = 8.px)
             ) {
-                FaCalendar(
-                    modifier = Modifier.color(
-                        Color.rgb(0x64748B)
-                    )
-                )
-
-                H4(
-                    Modifier
-                    .color(Color.rgb(0x94a3b8))
-                    .fontSize(0.95.cssRem)
-                        .toAttrs {  }
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(0.5.cssRem)
                 ) {
-                    Text(
-                        Res.string.n_years.format(number = education.durationInYears, education.durationInYears.toString()),
+                    FaCalendar(
+                        modifier = Modifier.color(
+                            Color.rgb(0x64748B)
+                        )
                     )
+
+                    H4(
+                        Modifier
+                            .color(Color.rgb(0x94a3b8))
+                            .fontSize(0.95.cssRem)
+                            .padding(0.px)
+                            .margin(0.px)
+                            .toAttrs {  }
+                    ) {
+                        Text(
+                            Res.string.n_years.format(number = education.durationInYears, education.durationInYears.toString()),
+                        )
+                    }
                 }
 
-                FaMapLocation(
-                    modifier = Modifier.color(
-                        Color.rgb(0x64748B)
-                    )
-                )
-
-                H4(
-                    Modifier
-                        .color(Color.rgb(0x94a3b8))
-                        .fontSize(0.95.cssRem)
-                        .toAttrs {  }
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(0.5.cssRem)
                 ) {
-                    Text(
-                        education.location,
+                    FaMapLocation(
+                        modifier = Modifier.color(
+                            Color.rgb(0x64748B)
+                        )
                     )
+
+                    H4(
+                        Modifier
+                            .color(Color.rgb(0x94a3b8))
+                            .fontSize(0.95.cssRem)
+                            .padding(0.px)
+                            .margin(0.px)
+                            .toAttrs {  }
+                    ) {
+                        Text(
+                            education.location,
+                        )
+                    }
                 }
             }
 
@@ -154,9 +174,9 @@ fun EducationCard(
                 )
             }
 
-            // Subject list
             education.subjects
                 .groupBy { it.category }
+
                 .forEach { (category, subjects) ->
                     CategorySection(
                         category = category,
@@ -166,28 +186,17 @@ fun EducationCard(
                 }
 
             if (education.certificates.isNotEmpty()) {
-
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-//                    Text(
-//                        Res.string.professional_certificates,
-//                    )
                     H3 {
                         Text(
                             value = Res.string.n_certificates.format(
                                 number = education.certificates.size,
                                 education.certificates.size.toString()
                             ),
-//                        text = pluralStringResource(
-//                            Res.plurals.n_certificates,
-//                            education.certificates.size,
-//                            education.certificates.size
-//                        ),
-//                        fontSize = 14.sp,
-//                        color = Color(0xFF64748B)
                         )
                     }
 

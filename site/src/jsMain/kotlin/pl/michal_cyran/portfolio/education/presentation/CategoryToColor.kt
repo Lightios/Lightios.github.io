@@ -10,7 +10,6 @@ fun categoryToColor(category: SubjectCategory): CSSColorValue {
         SubjectCategory.Mathematics -> BadgeColors.cyan
         SubjectCategory.ProgrammingAndSoftwareEngineering -> BadgeColors.magenta
         SubjectCategory.SystemsAndComputerTechnology -> BadgeColors.green
-        SubjectCategory.AIAndCognitiveScience -> BadgeColors.red
-        SubjectCategory.Other -> BadgeColors.blue
+        SubjectCategory.Other -> BadgeColors.red
     }
 }

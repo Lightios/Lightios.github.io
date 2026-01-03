@@ -10,6 +10,7 @@ import com.varabyte.kobweb.compose.ui.modifiers.fontSize
 import com.varabyte.kobweb.compose.ui.modifiers.left
 import com.varabyte.kobweb.compose.ui.modifiers.lineHeight
 import com.varabyte.kobweb.compose.ui.modifiers.listStyle
+import com.varabyte.kobweb.compose.ui.modifiers.margin
 import com.varabyte.kobweb.compose.ui.modifiers.padding
 import com.varabyte.kobweb.compose.ui.modifiers.position
 import com.varabyte.kobweb.compose.ui.modifiers.transition
@@ -24,6 +25,7 @@ val ListStyle = CssStyle {
         Modifier
             .listStyle(ListStyle.None)
             .padding(left = 0.px)
+            .margin(bottom = 2.cssRem)
     }
     cssRule(" li") {
         Modifier

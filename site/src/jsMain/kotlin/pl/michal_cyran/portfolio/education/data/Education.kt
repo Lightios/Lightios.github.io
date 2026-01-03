@@ -42,12 +42,12 @@ val education = listOf(
         institution = Res.string.education_uj_organization,
         location = Res.string.Poland,
         subjects = listOf(
-            Subject(Res.string.Algebra, SubjectCategory.Mathematics),
+            Subject(Res.string.ProgrammingMethods, SubjectCategory.ProgrammingAndSoftwareEngineering),
             Subject(Res.string.ComputerOrganizationAndArchitecture, SubjectCategory.SystemsAndComputerTechnology),
+            Subject(Res.string.Algebra, SubjectCategory.Mathematics),
             Subject(Res.string.Programming, SubjectCategory.ProgrammingAndSoftwareEngineering),
             Subject(Res.string.LogicAndSetTheory, SubjectCategory.Mathematics),
             Subject(Res.string.MathematicalAnalysis, SubjectCategory.Mathematics),
-            Subject(Res.string.ProgrammingMethods, SubjectCategory.ProgrammingAndSoftwareEngineering),
             Subject(Res.string.OperatingSystems, SubjectCategory.SystemsAndComputerTechnology),
             Subject(Res.string.AlgorithmsAndDataStructures, SubjectCategory.ProgrammingAndSoftwareEngineering),
             Subject(Res.string.DiscreteMathematics, SubjectCategory.Mathematics),
@@ -61,10 +61,10 @@ val education = listOf(
             Subject(Res.string.AndroidProgramming, SubjectCategory.ProgrammingAndSoftwareEngineering),
             Subject(Res.string.DesignPatterns, SubjectCategory.ProgrammingAndSoftwareEngineering),
             Subject(Res.string.CSharpProgramming, SubjectCategory.ProgrammingAndSoftwareEngineering),
-            Subject(Res.string.CognitiveSystems, SubjectCategory.AIAndCognitiveScience),
-            Subject(Res.string.CognitiveScience, SubjectCategory.AIAndCognitiveScience),
+            Subject(Res.string.CognitiveSystems, SubjectCategory.Other),
+            Subject(Res.string.CognitiveScience, SubjectCategory.Other),
             Subject(Res.string.WebProgramming, SubjectCategory.ProgrammingAndSoftwareEngineering),
-            Subject(Res.string.FundamentalsOfAI, SubjectCategory.AIAndCognitiveScience),
+            Subject(Res.string.FundamentalsOfAI, SubjectCategory.Other),
             Subject(Res.string.English, SubjectCategory.Other)
         ),
 
