@@ -6,7 +6,8 @@ import org.jetbrains.compose.web.css.Color
 
 
 data class Stat(
-    val value: String,
+    val value: Int,
+    val unit: String,
     val label: String,
     val color: CSSColorValue = Colors.Cyan
 )

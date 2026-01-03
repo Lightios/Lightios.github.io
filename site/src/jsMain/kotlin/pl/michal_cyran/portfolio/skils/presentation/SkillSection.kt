@@ -58,7 +58,8 @@ fun SkillSection(
 
             SimpleGrid(
                 numColumns(1, md=3),
-                modifier = Modifier.gap(20.px),
+                modifier = Modifier.gap(20.px)
+                    .fillMaxWidth(),
             ) {
                 filteredSkills.forEach { skill ->
                     SkillCard(
