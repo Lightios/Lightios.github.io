@@ -30,6 +30,7 @@ import org.jetbrains.compose.web.dom.H1
 import org.jetbrains.compose.web.dom.H3
 import org.jetbrains.compose.web.dom.H4
 import org.jetbrains.compose.web.dom.Text
+import pl.michal_cyran.portfolio.core.presentation.HeroSection
 import pl.michal_cyran.portfolio.core.presentation.NavigationCard
 
 @Composable
@@ -43,34 +44,7 @@ fun MainScreen(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(16.px)
     ) {
-
-        H1(
-            Modifier.textAlign(
-                TextAlign.Center
-            ).toAttrs {  }
-        ) {
-            Text(
-                Res.string.welcome_p1 + "\n"
-//            text = buildAnnotatedString {
-//                append(stringResource(Res.string.welcome_p1) + "\n")
-//                withStyle(SpanStyle(color = MaterialTheme.colorScheme.primary)) {
-//                    append(stringResource(Res.string.welcome_p2))
-//                }
-//            },
-//            style = MaterialTheme.typography.headlineLarge
-            )
-
-            SpanText(
-                text = Res.string.welcome_p2,
-                modifier = Modifier.color(Colors.Cyan)
-            )
-        }
-
-        H4 {
-            Text(
-                Res.string.home_description,
-            )
-        }
+        HeroSection()
 
         SimpleGrid(
             numColumns(1, md=3),

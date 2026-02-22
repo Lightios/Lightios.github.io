@@ -22,8 +22,6 @@ fun TechnologyBadge(technology: Technology) {
             .backgroundColor(Color("#1F2937"))
             .borderRadius(8.px)
             .padding(leftRight = 4.px, topBottom = 4.px)
-//        shape = RoundedCornerShape(8.dp),
-//        modifier = Modifier.clip(RoundedCornerShape(8.dp))
     ) {
         Image(
             src = technology.icon,
