@@ -4,6 +4,7 @@ data class Project (
     val name: String,
     val description: String,
     val shortDescription: String,
+    val technicalDescription: String = "",
     val logo: String,
     val skills: List<String>,
     val type: ProjectType,

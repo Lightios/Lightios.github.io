@@ -84,10 +84,10 @@ val masterSystemScreenshots = generateScreenshots(
 )
 
 val vlLabels = listOf(
+    "Wybór agenta",
+    "Wybór mapy",
     "Wybór lineupa",
     "Ekran lineupa",
-    "Wybór mapy",
-    "Wybór agenta"
 )
 
 val valorantLineupsScreenshots = generateScreenshots(

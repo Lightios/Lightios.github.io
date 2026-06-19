@@ -11,6 +11,7 @@ val commercialProjects = listOf(
         name = "Valorant Lineups",
         description = Res.string.projects_vl_description,
         shortDescription = Res.string.projects_vl_shortDescription,
+        technicalDescription = Res.string.projects_vl_technicalDescription,
         logo = "valorant-lineups.png",
         skills = listOf("python", "kivy", "kotlin", "jetpack_compose", "room"),
         type = ProjectType.MOBILE_APPLICATION,
@@ -28,6 +29,7 @@ val commercialProjects = listOf(
         name = "DayMath",
         description = Res.string.projects_daymath_description,
         shortDescription = Res.string.projects_daymath_shortDescription,
+        technicalDescription = Res.string.projects_daymath_technicalDescription,
         logo = "daymath.png",
         skills = listOf("kotlin", "jetpack_compose", "python", "manim", "latex", "room"),
         type = ProjectType.MOBILE_APPLICATION,
@@ -41,11 +43,30 @@ val commercialProjects = listOf(
         screenshots = daymathScreenshots,
         isImportant = true,
     ),
+    Project(
+        name = "Egzaminy z Matematyki",
+        description = Res.string.projects_matura_tasks_hub_description,
+        shortDescription = Res.string.projects_matura_tasks_hub_shortDescription,
+        technicalDescription = Res.string.projects_matura_tasks_hub_technicalDescription,
+        logo = "book.svg",
+        skills = listOf("kotlin", "kobweb", "python", "latex"),
+        type = ProjectType.WEB_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "https://egzaminy.michal-cyran.pl/",
+                type = ProjectLinkType.WEBSITE,
+            )
+        ),
+        category = ProjectCategory.COMMERCIAL,
+        screenshots = maturaTasksHubScreenshots,
+        isImportant = true,
+    ),
 
     Project(
         name = "Master System",
         description = Res.string.projects_master_system_description,
         shortDescription = Res.string.projects_master_system_shortDescription,
+        technicalDescription = Res.string.projects_master_system_technicalDescription,
         logo = "master-system.png",
         skills = listOf("python", "kivy", "pillow", "fpdf2"),
         type = ProjectType.DESKTOP_APPLICATION,
@@ -54,21 +75,4 @@ val commercialProjects = listOf(
         screenshots = masterSystemScreenshots,
     ),
 
-    Project(
-        name = "Matura Tasks Hub",
-        description = Res.string.projects_matura_tasks_hub_description,
-        shortDescription = Res.string.projects_matura_tasks_hub_shortDescription,
-        logo = "book.svg",
-        skills = listOf("kotlin", "kobweb", "python", "latex"),
-        type = ProjectType.WEB_APPLICATION,
-        links = listOf(
-            ProjectLink(
-                to = "https://srv97869.seohost.com.pl//",
-                type = ProjectLinkType.WEBSITE,
-            )
-        ),
-        category = ProjectCategory.COMMERCIAL,
-        screenshots = maturaTasksHubScreenshots,
-        isImportant = true,
-    )
 )

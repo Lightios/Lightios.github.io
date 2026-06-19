@@ -50,6 +50,7 @@ val personal = listOf(
         name = "Mobile Remote",
         description = Res.string.projects_mobile_remote_description,
         shortDescription = Res.string.projects_mobile_remote_shortDescription,
+        technicalDescription = Res.string.projects_mobile_remote_technicalDescription,
         logo = "remote_gen.svg",
         skills = listOf("kotlin", "jetpack_compose", "spring_boot", "ktor"),
         type = ProjectType.OTHER,

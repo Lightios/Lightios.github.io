@@ -40,28 +40,70 @@ import org.jetbrains.compose.web.css.vw
 import org.jetbrains.compose.web.dom.Text
 import pl.michal_cyran.portfolio.projects.presentation.description.ScreenshotCardStyle
 
+
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import com.varabyte.kobweb.compose.foundation.layout.Column
+import com.varabyte.kobweb.compose.ui.modifiers.aspectRatio
+import com.varabyte.kobweb.compose.ui.modifiers.cursor
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.onClick
+import com.varabyte.kobweb.silk.style.toModifier
+import org.jetbrains.compose.web.css.cssRem
+import org.jetbrains.compose.web.css.px
+import org.jetbrains.compose.web.dom.Img
+import org.jetbrains.compose.web.dom.Text
+import pl.michal_cyran.portfolio.projects.presentation.description.ScreenshotCardStyle
+
 @Composable
 fun Screenshot(
     resource: String,
     screenshotText: String,
-    onClick: () -> Unit = { },
+    onClick: () -> Unit = {},
 ) {
+    // Stays null until the browser has decoded the image and we know real dimensions.
+    var aspectRatio by remember(resource) { mutableStateOf<Pair<Int, Int>?>(null) }
+
+    // While loading, use a neutral 4:3 placeholder so the card has some height
+    // and doesn't collapse. Snaps to the real ratio on load without jarring reflow
+    // because the transition on ScreenshotCardStyle covers it.
+    val (ratioW, ratioH) = aspectRatio ?: (4 to 3)
 
     Column(
         modifier = ScreenshotCardStyle.toModifier()
+            .padding(bottom = 1.cssRem)
+            .aspectRatio(ratioW, ratioH)
             .cursor(Cursor.Pointer)
             .onClick { onClick() },
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(8.px)
+        verticalArrangement = Arrangement.spacedBy(1.cssRem)
     ) {
-        Image(
+        Img(
             src = resource,
-            alt = "Project Screenshot",
+            alt = screenshotText,
+            attrs = {
+                style {
+                    property("width", "100%")
+                    property("height", "100%")
+                    property("object-fit", "cover")
+                    property("display", "block")
+                }
+                addEventListener("load") { event ->
+                    val img = event.target.asDynamic()
+                    val w = (img.naturalWidth as? Int)?.takeIf { it > 0 } ?: 16
+                    val h = (img.naturalHeight as? Int)?.takeIf { it > 0 } ?: 9
+                    // Reduce to a small integer ratio so aspectRatio() gets clean numbers.
+                    // e.g. 1080x1920 → gcd=1080 → 1:1.77 → we just pass raw w:h,
+                    // the browser handles non-integer ratios fine.
+                    aspectRatio = w to h
+                }
+            }
         )
 
-        Text(
-            screenshotText,
-        )
+        if (screenshotText.isNotBlank()) {
+            Text(screenshotText)
+        }
     }
-
 }

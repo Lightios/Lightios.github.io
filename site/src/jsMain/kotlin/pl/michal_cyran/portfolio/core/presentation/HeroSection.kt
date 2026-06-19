@@ -31,46 +31,38 @@ fun HeroSection() {
         Div(attrs = Modifier.classNames("hero-left").toAttrs()) {
 
             P(attrs = HeroLabelStyle.toAttrs()) {
-                Text("// cześć, jestem")
+                Text(Res.string.hero_label)
             }
 
             H1(attrs = HeroTitleStyle.toAttrs()) {
-                Text("Michał Cyran —")
+                Text(Res.string.hero_title_name)
                 Br()
-                Span { Text("Kotlin") }
-                Text(" dev")
+                Span { Text(Res.string.hero_title_kotlin) }
+                Text(Res.string.hero_title_dev)
                 Br()
-                Text("& math enthusiast")
+                Text(Res.string.hero_title_math)
             }
 
             P(attrs = HeroDescStyle.toAttrs()) {
-                Text("Pasjonuję się aplikacji w ")
-                SpanText(
-                    text = "Kotlinie",
-                )
-                Text(" na Androida, a także inne platformy dzięki KMP. Tworzę też wizualizacje matematyczne z użyciem ")
-                SpanText(
-                    text = "Pythona",
-                )
-                Text(" z biblioteką ")
-                SpanText(
-                    text = "Manim",
-                )
+                Text(Res.string.hero_desc_part1)
+                SpanText(Res.string.kotlin_locative)
+                Text(Res.string.hero_desc_part2)
+                SpanText(Res.string.python_genitive)
+                Text(Res.string.hero_desc_part3)
+                SpanText(text = "Manim")
                 Text(".")
             }
         }
 
         // RIGHT SIDE
         Div() {
-
             Div(attrs = StackPanelStyle.toAttrs()) {
 
                 P(attrs = StackTitleStyle.toAttrs()) {
-                    Text("// tech stack")
+                    Text(Res.string.stack_title)
                 }
 
                 Div(attrs = TechListStyle.toAttrs()) {
-
                     TechItem("Kotlin", "primary", Colors.Orange)
                     TechItem("Jetpack Compose", "mobile", Colors.Green)
                     TechItem("Compose Multiplatform", "desktop", Colors.SkyBlue)
