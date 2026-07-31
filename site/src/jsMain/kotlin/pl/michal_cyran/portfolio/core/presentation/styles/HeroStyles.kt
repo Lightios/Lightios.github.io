@@ -81,10 +81,6 @@ val surface2 = Color("#1c2333")
 val HeroStyle = CssStyle.base {
     Modifier
         .display(DisplayStyle.Grid)
-        .gridTemplateColumns {
-            size(1.fr)
-            size(1.fr)
-        }
         .gap(4.cssRem)
         .alignItems(AlignItems.Center)
         .margin(bottom = 5.cssRem)

@@ -11,6 +11,7 @@ val personal = listOf(
         name = "Function solver",
         description = Res.string.projects_function_solver_description,
         shortDescription = Res.string.projects_function_solver_shortDescription,
+        technicalDescription = Res.string.projects_function_solver_technicalDescription,
         logo = "chart_data.svg",
         skills = listOf("kotlin", "jetpack_compose"),
         type = ProjectType.WEB_APPLICATION,
@@ -26,24 +27,6 @@ val personal = listOf(
         ),
         category = ProjectCategory.PERSONAL,
         screenshots = functionSolverScreenshots,
-        isImportant = true,
-    ),
-
-    Project(
-        name = "Math Tools",
-        description = Res.string.projects_math_tools_description,
-        shortDescription = Res.string.projects_math_tools_shortDescription,
-        logo = "build.svg",
-        skills = listOf("kotlin", "jetpack_compose"),
-        type = ProjectType.DESKTOP_APPLICATION,
-        links = listOf(
-            ProjectLink(
-                to = "https://github.com/Lightios/MathTools",
-                type = ProjectLinkType.GITHUB,
-            ),
-        ),
-        category = ProjectCategory.PERSONAL,
-        screenshots = mathToolsScreenshots,
         isImportant = true,
     ),
     Project(
@@ -66,6 +49,25 @@ val personal = listOf(
         ),
         category = ProjectCategory.PERSONAL,
         screenshots = mobileRemoteScreenshots,
+        isImportant = true,
+    ),
+
+    Project(
+        name = "Math Tools",
+        description = Res.string.projects_math_tools_description,
+        shortDescription = Res.string.projects_math_tools_shortDescription,
+        logo = "build.svg",
+        skills = listOf("kotlin", "jetpack_compose"),
+        type = ProjectType.DESKTOP_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "https://github.com/Lightios/MathTools",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PERSONAL,
+        screenshots = mathToolsScreenshots,
+        isImportant = true,
     ),
 
     Project(
@@ -85,36 +87,18 @@ val personal = listOf(
         isImportant = true,
     ),
 
-    Project(
-        name = "Tutor Website",
-        description = Res.string.projects_tutor_website_description,
-        shortDescription = Res.string.projects_tutor_website_shortDescription,
-        logo = "sell.svg",
-        skills = listOf("kotlin", "kobweb"),
-        type = ProjectType.WEB_APPLICATION,
-        links = listOf(
-            ProjectLink(
-                to = "https://lightios.github.io/TutorWebsite/",
-                type = ProjectLinkType.WEBSITE,
-            ),
-            ProjectLink(
-                to = "https://github.com/Lightios/TutorWebsiteCode",
-                type = ProjectLinkType.GITHUB,
-            )
-        ),
-        category = ProjectCategory.PERSONAL,
-    ),
 
     Project(
         name = "Scheduler",
-        description = Res.string.projects_screenshot_processor_description,
+        description = Res.string.projects_scheduler_description,
         shortDescription = Res.string.projects_scheduler_shortDescription,
+        technicalDescription = Res.string.projects_scheduler_technicalDescription,
         logo = "calendar_clock.svg",
         skills = listOf("python", "pillow"),
         type = ProjectType.CONSOLE,
         links = listOf(
             ProjectLink(
-                to = "https://github.com/Lightios/CalicoCompanion",
+                to = "https://github.com/Lightios/Scheduler",
                 type = ProjectLinkType.GITHUB,
             ),
         ),
@@ -153,6 +137,25 @@ val personal = listOf(
         ),
         category = ProjectCategory.PERSONAL,
         screenshots = emptyList()
+    ),
+    Project(
+        name = "Tutor Website",
+        description = Res.string.projects_tutor_website_description,
+        shortDescription = Res.string.projects_tutor_website_shortDescription,
+        logo = "sell.svg",
+        skills = listOf("kotlin", "kobweb"),
+        type = ProjectType.WEB_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "https://michal-cyran.pl/tutoring",
+                type = ProjectLinkType.WEBSITE,
+            ),
+            ProjectLink(
+                to = "https://github.com/Lightios/BrandHub",
+                type = ProjectLinkType.GITHUB,
+            )
+        ),
+        category = ProjectCategory.PERSONAL,
     ),
 
     Project(

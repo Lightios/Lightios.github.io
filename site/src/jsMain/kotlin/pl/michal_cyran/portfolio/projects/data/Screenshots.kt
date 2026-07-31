@@ -74,9 +74,9 @@ val msLabels = listOf(
     "Ekran główny",
     "Kontakt",
     "Ekran turnieju - 8 drużyn",
-    "Ekran turnieju - 16 drużyn",
-    "Powiększenie grafu",
-    "Podgląd PDF"
+    "Tworzenie drużyn",
+    "Tworzenie turnieju",
+    "Zapisane turnieje"
 )
 val masterSystemScreenshots = generateScreenshots(
     name = "master_system",

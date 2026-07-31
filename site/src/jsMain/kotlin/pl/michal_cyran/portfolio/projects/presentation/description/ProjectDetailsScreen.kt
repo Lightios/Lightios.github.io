@@ -266,15 +266,3 @@ fun ProjectDetailsScreen(projectSlug: String) {
         }
     }
 }
-
-@Composable
-private fun TechnicalFact(label: String, value: String) {
-    Row(
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(12.px),
-        modifier = Modifier.fillMaxWidth()
-    ) {
-        Box(TechFactLabelStyle.toModifier()) { Text(label) }
-        Text(value)
-    }
-}

@@ -9,7 +9,11 @@ import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.gap
 import com.varabyte.kobweb.compose.ui.modifiers.padding
+import com.varabyte.kobweb.silk.components.layout.SimpleGrid
+import com.varabyte.kobweb.silk.components.layout.numColumns
+import org.jetbrains.compose.web.css.cssRem
 import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.dom.H1
@@ -59,9 +63,10 @@ fun AchievementsScreen(
             )
         }
 
-        Row(
-            modifier = Modifier.fillMaxWidth(100.percent),
-            horizontalArrangement = Arrangement.spacedBy(16.px)
+        SimpleGrid(
+            numColumns(base=2, md=4),
+            modifier = Modifier.fillMaxWidth(100.percent).gap(1.cssRem),
+//            horizontalArrangement = Arrangement.spacedBy(16.px)
         ) {
             statCards.forEach { stat ->
                 StatisticCard(

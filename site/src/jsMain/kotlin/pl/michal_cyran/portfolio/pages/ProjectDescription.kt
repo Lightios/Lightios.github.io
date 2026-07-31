@@ -12,7 +12,7 @@ import pl.michal_cyran.portfolio.projects.presentation.description.ProjectDetail
 
 @InitRoute
 fun initProjectDescriptionPage(ctx: InitRouteContext) {
-    ctx.data.add(PageLayoutData(Res.string.projects_description))
+    ctx.data.add(PageLayoutData(Res.string.projects))
 }
 
 @Page()
