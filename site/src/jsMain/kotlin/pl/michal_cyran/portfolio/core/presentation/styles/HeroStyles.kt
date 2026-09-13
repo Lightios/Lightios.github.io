@@ -92,8 +92,8 @@ val HeroLabelStyle = CssStyle.base {
         .fontSize(0.78.cssRem)
         .color(Colors.Cyan)
         .letterSpacing(0.15.em)
-        .textTransform(TextTransform.Uppercase)
-        .margin(leftRight = 10.px, top = 2.cssRem)
+//        .textTransform(TextTransform.Uppercase)
+        .margin(leftRight = 1.cssRem, top = 1.cssRem)
         .padding(leftRight = 10.px)
 //        .margin(bottom = 1.cssRem)
 }

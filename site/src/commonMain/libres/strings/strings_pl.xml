@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
     <string name="locale">pl</string>
-    <string name="welcome_p1">Witaj w moim</string>
-    <string name="welcome_p2">cyfrowym portfolio!</string>
-
 
     <string name="homepage_description">Pasjonuję się informatyką i rozwijam się w tworzeniu aplikacji na Androida</string>
     <string name="homepage_tutor_website">Moja strona korepetycji</string>
@@ -40,37 +37,25 @@
     <string name="view_more">Zobacz więcej</string>
 
     <string name="hero_label">// cześć, jestem</string>
-    <string name="hero_title_name">Michał Cyran —</string>
-    <string name="hero_title_kotlin">Kotlin</string>
-    <string name="hero_title_dev"> dev</string>
-    <string name="hero_title_math">&amp; entuzjasta matematyki</string>
-    <string name="hero_desc_part1">Pasjonuję się tworzeniem aplikacji w </string>
-    <string name="hero_desc_part2"> na Androida, a także inne platformy dzięki KMP. Tworzę też wizualizacje matematyczne z użyciem </string>
-    <string name="hero_desc_part3"> z biblioteką </string>
-    <string name="stack_title">// tech stack</string>
-    <string name="kotlin_locative">Kotlinie</string>
-    <string name="python_genitive">Pythona</string>
+    <string name="hero_title_name">Michał Cyran</string>
 
-    <string name="hero_main_label">'m developer comitted to work with Kotlin. My journey with Kotlin started at Android Course
-        on my university. After finishing my bachelor degree, I spent 2 years diving deep into this
-        language. I built 5 commercial projects with it (3 of them are multiplatform), 10 tools to
-        boost my productivity while working on other stuff, and many more projects just to exercise.
-        My biggest project is Valorant Lineups. It has nearly 200k downloads on Google Play. I
-        started this project 5 years ago. The first version was done in Python with KivyMD, but it
-        was getting harder as my app was expanding, so I migrated this to Kotlin with Jetpack
-        Compose. After that I migrated it to Kotlin Multiplatform to support the web target as well.
-        It contains features like: Firebase connection with data caching system, users' real-time
-        voting on features, offline mode (downloading data with quick updates when I create new
-        lineups), saving users' preferences in database with Room, users' lineup submissions, video
-        guides, in-app update notifications integrated with Google Play, Riot Games authentication
-        and AdMob integration.
-        Currently I'm deep diving into Kotlin Coroutines. My target is to go through 15 project
-        involving different ascepts of coroutines, from scratch to advanced. Details in this repo.
-        Besides creating apps, I'm working as a math tutor, which confirms my high math skills
-        (hence the problem solving) as well as good cooperation with people and my ability to run a
-        business.
-        I stay up to date with Kotlin. I've read the book named Kotlin in Action. I also regularly watch
-        video materials about it like KotlinConf, Dave Leeds, Philipp Lackner, and Stevdza-San.</string>
+    <!-- Story section -->
+    <string name="story_label">// moja historia</string>
+    <string name="story_intro">Przygodę z Kotlinem zacząłem na studiach. Po uzyskaniu tytułu licencjata, spędziłem 2 lata na zagłębienie się w ten język. W tym czasie napisałem wiele róznych aplikacji. Możesz je przejrzeć na stronie Projekty.</string>
+
+    <!-- Current focus: coroutines -->
+    <string name="focus_title">// obecnie uczę się</string>
+    <string name="focus_coroutines">Obecnie zgłębiam wiedzę na temat Coroutines w Kotlinie. Zamierzem przejść przez 15 projektów, z których każdy dotyczy innego aspektu coroutines, od podstaw do zaawansowanych rzeczy.</string>
+    <string name="focus_coroutines_link_label">Zobacz repozytorium</string>
+
+    <!-- Beyond code -->
+    <string name="beyond_title">// poza programowaniem</string>
+    <string name="beyond_tutoring">Pracuję jako korepetytor matematyki, co potwierdza moją inteligencję matematyczną (a co za tym idzie - rozwiązywanie problemów), ale też umiejętność komunikacji z ludźmi oraz zdolność do prowadzenia biznesu.</string>
+
+    <!-- Staying current -->
+    <string name="learning_title">// nieustanne rozwijanie się</string>
+    <string name="learning_book">Przeczytałem: Kotlin in Action</string>
+    <string name="learning_channels">Regularnie oglądam: KotlinConf, Dave Leeds, Philipp Lackner, Stevdza-San</string>
 
     <!-- SKILLS -->
     <string name="skills_title">Umiejętności techniczne</string>
@@ -219,7 +204,7 @@
     <string name="projects_tutoring_work_sheet_shortDescription">Aplikacja do śledzenia moich zarobków z korepetycji i odliczania podatku</string>
     <string name="projects_tutoring_work_sheet_description">Aplikacja do śledzenia moich zarobków z korepetycji i odliczania podatku.</string>
 
-    <string name="projects_coroutines_learning_shortDescription">Zestaw 15 projektów do nauki coroutines od podstaw</string>
+    <string name="projects_coroutines_learning_shortDescription">Zestaw 15 projektów do nauki coroutines od podstaw - w trakcie wykonywania</string>
     <string name="projects_coroutines_learning_description">Zestaw 15 projektów do nauki coroutines od podstaw. Początkowo aplikacje konsolowe, później z interfejsem graficznym. Szczegóły dostępne w pliku README w repozytorium</string>
     <!-- EXPERIENCE -->
     <string name="experience_title">Doświadczenie zawodowe</string>

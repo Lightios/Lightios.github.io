@@ -7,7 +7,7 @@ import com.varabyte.kobweb.core.init.InitRoute
 import com.varabyte.kobweb.core.init.InitRouteContext
 import com.varabyte.kobweb.core.layout.Layout
 import pl.michal_cyran.portfolio.components.layouts.PageLayoutData
-import pl.michal_cyran.portfolio.core.MainScreen
+import pl.michal_cyran.portfolio.core.MainPage
 
 @InitRoute
 fun initMainPage(ctx: InitRouteContext) {
@@ -18,5 +18,5 @@ fun initMainPage(ctx: InitRouteContext) {
 @Layout(".components.layouts.PageLayout")
 @Page
 fun IndexPage() {
-    MainScreen()
+    MainPage()
 }

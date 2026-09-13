@@ -11,9 +11,6 @@
     <string name="social_media_screen">Social Media</string>
     <string name="achievements_screen">Achievements</string>
 
-    <string name="welcome_p1">Welcome to my</string>
-    <string name="welcome_p2">digital portfolio!</string>
-
     <string name="homepage_description">I'm passionate about tech and focused on Android app development.</string>
     <string name="homepage_tutor_website">My tutoring website</string>
 
@@ -47,39 +44,31 @@
     <string name="achievements_button">Achievements</string>
 
     <string name="view_more">View More</string>
+    <string name="stack_title">// TECH STACK</string>
 
     <string name="hero_label">// hi, I'm</string>
-    <string name="hero_title_name">Michał Cyran —</string>
-    <string name="hero_title_kotlin">Kotlin</string>
-    <string name="hero_title_dev"> dev</string>
-    <string name="hero_title_math">&amp; math enthusiast</string>
-    <string name="hero_desc_part1">I'm passionate about building apps in </string>
-    <string name="hero_desc_part2"> for Android and other platforms thanks to KMP. I also create math visualizations using </string>
-    <string name="hero_desc_part3"> with the </string>
-    <string name="stack_title">// tech stack</string>
-    <string name="kotlin_locative">Kotlin</string>
-    <string name="python_genitive">Python</string>
+    <string name="hero_title_name">Michał Cyran</string>
 
-    <string name="hero_main_label">'m developer comitted to work with Kotlin. My journey with Kotlin started at Android Course
-        on my university. After finishing my bachelor degree, I spent 2 years diving deep into this
-        language. I built 5 commercial projects with it (3 of them are multiplatform), 10 tools to
-        boost my productivity while working on other stuff, and many more projects just to exercise.
-        My biggest project is Valorant Lineups. It has nearly 200k downloads on Google Play. I
-        started this project 5 years ago. The first version was done in Python with KivyMD, but it
-        was getting harder as my app was expanding, so I migrated this to Kotlin with Jetpack
-        Compose. After that I migrated it to Kotlin Multiplatform to support the web target as well.
-        It contains features like: Firebase connection with data caching system, users' real-time
-        voting on features, offline mode (downloading data with quick updates when I create new
-        lineups), saving users' preferences in database with Room, users' lineup submissions, video
-        guides, in-app update notifications integrated with Google Play, Riot Games authentication
-        and AdMob integration.
-        Currently I'm deep diving into Kotlin Coroutines. My target is to go through 15 project
-        involving different ascepts of coroutines, from scratch to advanced. Details in this repo.
-        Besides creating apps, I'm working as a math tutor, which confirms my high math skills
-        (hence the problem solving) as well as good cooperation with people and my ability to run a
-        business.
-        I stay up to date with Kotlin. I've read the book named Kotlin in Action. I also regularly watch
-        video materials about it like KotlinConf, Dave Leeds, Philipp Lackner, and Stevdza-San.</string>
+        <!-- Story section -->
+    <string name="story_label">// my story</string>
+    <string name="story_intro">My journey with Kotlin started on the Android Course at university. After finishing my bachelor's degree, I spent 2 years diving deep into the language. I've built many apps within that time. You can browse them all at Projects page.</string>
+
+        <!-- Current focus: coroutines -->
+    <string name="focus_title">// currently exploring</string>
+    <string name="focus_coroutines">Currently I'm deep diving into Kotlin Coroutines. My target is to go through 15 project
+        involving different aspects of coroutines, from scratch to advanced.</string>
+    <string name="focus_coroutines_link_label">See the repo</string>
+
+        <!-- Beyond code -->
+    <string name="beyond_title">// beyond code</string>
+    <string name="beyond_tutoring">'m working as a math tutor, which confirms my high math skills
+        (hence the problem-solving) as well as good cooperation with people and my ability to run a
+        business.</string>
+
+        <!-- Staying current -->
+    <string name="learning_title">// staying up to date</string>
+    <string name="learning_book">Read: Kotlin in Action</string>
+    <string name="learning_channels">Regularly watching: KotlinConf, Dave Leeds, Philipp Lackner, Stevdza-San</string>
 
     <!-- SKILLS -->
     <string name="skills_title">Technical Skills</string>
@@ -230,7 +219,7 @@
     <string name="projects_tutoring_work_sheet_shortDescription">An application for tracking my tutoring earnings and tax deductions</string>
     <string name="projects_tutoring_work_sheet_description">An application for tracking my tutoring earnings and tax deductions.</string>
 
-    <string name="projects_coroutines_learning_shortDescription">A set of 15 projects for learning coroutines from scratch</string>
+    <string name="projects_coroutines_learning_shortDescription">A set of 15 projects for learning coroutines from scratch - not done yet</string>
     <string name="projects_coroutines_learning_description">A set of 15 projects for learning coroutines from scratch. Initially console applications, later featuring a graphical user interface. Details available in the repository's README file.</string>
     <!-- EXPERIENCE -->
     <string name="experience_title">Experience</string>
