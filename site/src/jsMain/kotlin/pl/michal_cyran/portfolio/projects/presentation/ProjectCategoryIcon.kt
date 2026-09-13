@@ -17,7 +17,7 @@ fun ProjectCategoryIcon(
     when (category) {
         ProjectCategory.COMMERCIAL -> FaBriefcase(size = size)
         ProjectCategory.PERSONAL -> FaPerson(size = size)
-        ProjectCategory.ACADEMIC -> FaUserGraduate()
-        ProjectCategory.PRACTICE -> FaDumbbell()
+        ProjectCategory.ACADEMIC -> FaUserGraduate(size = size)
+        ProjectCategory.PRACTICE -> FaDumbbell(size = size)
     }
 }

@@ -147,24 +147,8 @@ val StackPanelStyle = CssStyle {
         .position(Position.Relative)
         .overflow(Overflow.Hidden)
     }
-    before {
-        Modifier
-            .content("")
-            .position(Position.Absolute)
-            .top((-40).px)
-            .right((-40).px)
-            .background(
-                Background.of(
-                    image = radialGradient(RadialGradient.Shape.Circle) {
-                        add(Color.rgba(0, 212, 212, 0.15f))
-                        add(Colors.Transparent, 70.percent)
-                    }.toImage()
-                )
-            )
-            .pointerEvents(PointerEvents.None)
-            .size(140.px)
-    }
 }
+
 val StackTitleStyle = CssStyle.base {
     Modifier
         .fontFamily("JetBrains Mono", "monospace")

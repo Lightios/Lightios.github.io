@@ -53,7 +53,7 @@ val ChipStyle = CssStyle {
             .borderRadius(0.5.cssRem)
             .border(1.5.px, LineStyle.Solid)
             .background(Colors.Transparent)
-            .fontSize(0.575.cssRem)
+            .fontSize(0.775.cssRem)
             .fontWeight(500)
             .transition(Transition.of("all", 0.2.s, TransitionTimingFunction.Ease))
             .whiteSpace(WhiteSpace.NoWrap)

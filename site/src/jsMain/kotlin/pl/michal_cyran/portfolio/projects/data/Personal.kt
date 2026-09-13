@@ -1,5 +1,6 @@
 package pl.michal_cyran.portfolio.projects.data
 
+import org.jetbrains.compose.web.attributes.AutoComplete.Companion.name
 import pl.michal_cyran.portfolio.projects.domain.Project
 import pl.michal_cyran.portfolio.projects.domain.ProjectCategory
 import pl.michal_cyran.portfolio.projects.domain.ProjectLink
@@ -94,7 +95,7 @@ val personal = listOf(
         shortDescription = Res.string.projects_scheduler_shortDescription,
         technicalDescription = Res.string.projects_scheduler_technicalDescription,
         logo = "calendar_clock.svg",
-        skills = listOf("python", "pillow"),
+        skills = listOf("kotlin"),
         type = ProjectType.CONSOLE,
         links = listOf(
             ProjectLink(
@@ -104,6 +105,23 @@ val personal = listOf(
         ),
         category = ProjectCategory.PERSONAL,
         screenshots = schedulerScreenshots,
+    ),
+
+    Project(
+        name = "Tutor work sheet",
+        description = Res.string.projects_tutoring_work_sheet_description,
+        shortDescription = Res.string.projects_tutor_website_shortDescription,
+        logo = "tutor_work_sheet.svg",
+        skills = listOf("kotlin", "jetpack_compose"),
+        type = ProjectType.DESKTOP_APPLICATION,
+        links = listOf(
+//            ProjectLink(
+//                to = "https://github.com/Lightios/",
+//                type = ProjectLinkType.GITHUB,
+//            ),
+        ),
+        category = ProjectCategory.PERSONAL,
+        screenshots = emptyList()
     ),
 
     Project(
@@ -122,6 +140,24 @@ val personal = listOf(
         category = ProjectCategory.PERSONAL,
         screenshots = emptyList()
     ),
+
+    Project(
+        name = "Video Processor",
+        description = Res.string.projects_video_processor_description,
+        shortDescription = Res.string.projects_video_processor_shortDescription,
+        logo = "screenshot_monitor.svg",
+        skills = listOf("kotlin", "jetpack_compose"),
+        type = ProjectType.DESKTOP_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "https://github.com/Lightios/ScreenshotProcessor",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PERSONAL,
+        screenshots = emptyList()
+    ),
+
     Project(
         name = "YouTube Downloader",
         description = Res.string.projects_youtube_downloader_description,
@@ -138,6 +174,24 @@ val personal = listOf(
         category = ProjectCategory.PERSONAL,
         screenshots = emptyList()
     ),
+
+    Project(
+        name = "YouTube Uploader",
+        description = Res.string.projects_youtube_uploader_description,
+        shortDescription = Res.string.projects_youtube_uploader_shortDescription,
+        logo = "genres.svg",
+        skills = listOf("python"),
+        type = ProjectType.CONSOLE,
+        links = listOf(
+            ProjectLink(
+                to = "https://github.com/Lightios/YouTubeDownloader",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PERSONAL,
+        screenshots = emptyList()
+    ),
+
     Project(
         name = "Tutor Website",
         description = Res.string.projects_tutor_website_description,

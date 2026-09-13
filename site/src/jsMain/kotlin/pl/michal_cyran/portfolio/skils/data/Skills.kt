@@ -132,6 +132,22 @@ val skills = listOf(
     ),
 
     Skill(
+        slug = "firebase",
+        name = "Firebase",
+        level = SkillLevel.COMPETENT,
+        category = SkillCategory.OTHER,
+        icon = "firebase.png"
+    ),
+
+    Skill(
+        slug = "supabase",
+        name = "Supabase",
+        level = SkillLevel.BEGINNER,
+        category = SkillCategory.OTHER,
+        icon = "supabase.png"
+    ),
+
+    Skill(
         slug = "polish",
         name = "Polish",
         level = SkillLevel.NATIVE,

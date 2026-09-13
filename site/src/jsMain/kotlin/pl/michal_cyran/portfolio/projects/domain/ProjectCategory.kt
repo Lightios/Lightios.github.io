@@ -6,6 +6,6 @@ enum class ProjectCategory(
 ) {
     COMMERCIAL(Res.string.commercial_project),
     PERSONAL(Res.string.personal_project),
-    ACADEMIC(Res.string.academic_project),
     PRACTICE(Res.string.practice_project),
+    ACADEMIC(Res.string.academic_project),
 }

@@ -25,9 +25,9 @@ val experiences = listOf(
         ),
         startDate = LocalDate(2021, 9, 1),
         stats = listOf(
-            Stat(50, "+", Res.string.students_taught),
+            Stat(100, "+", Res.string.students_taught),
             Stat(5, "/5", Res.string.rating),
-            Stat(20, "+", Res.string.reviews)
+            Stat(30, "+", Res.string.reviews)
         )
     ),
     Experience(
@@ -49,8 +49,8 @@ val experiences = listOf(
             Technology("Kotlin", "kotlin.png"),
         ),
         stats = listOf(
-            Stat(2, "", Res.string.apps_published),
-            Stat(100, "K+", Res.string.total_downloads),
+            Stat(5, "", Res.string.n_apps_published.format(5) ),
+            Stat(180, "K+", Res.string.total_downloads),
         )
     )
 )

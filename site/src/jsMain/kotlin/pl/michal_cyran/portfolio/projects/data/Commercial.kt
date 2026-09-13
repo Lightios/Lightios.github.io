@@ -13,12 +13,16 @@ val commercialProjects = listOf(
         shortDescription = Res.string.projects_vl_shortDescription,
         technicalDescription = Res.string.projects_vl_technicalDescription,
         logo = "valorant-lineups.png",
-        skills = listOf("python", "kivy", "kotlin", "jetpack_compose", "room"),
-        type = ProjectType.MOBILE_APPLICATION,
+        skills = listOf("kotlin", "jetpack_compose", "room", "ktor", "firebase"),
+        type = ProjectType.MULTIPLATFORM_APPLICATION,
         links = listOf(
             ProjectLink(
                 to = "https://play.google.com/store/apps/details?id=pl.ppistudio.valorantlineups.ppistudio.valorantlineups&hl=pl/",
                 type = ProjectLinkType.GOOGLE_PLAY,
+            ),
+            ProjectLink(
+                to = "https://lightios.github.io/ValorantLineupsWeb/",
+                type = ProjectLinkType.WEBSITE,
             )
         ),
         category = ProjectCategory.COMMERCIAL,
@@ -69,10 +73,23 @@ val commercialProjects = listOf(
         technicalDescription = Res.string.projects_master_system_technicalDescription,
         logo = "master-system.png",
         skills = listOf("python", "kivy", "pillow", "fpdf2"),
-        type = ProjectType.DESKTOP_APPLICATION,
+        type = ProjectType.MULTIPLATFORM_APPLICATION,
         links = listOf(),
         category = ProjectCategory.COMMERCIAL,
         screenshots = masterSystemScreenshots,
+    ),
+
+    Project(
+        name = "Asertiv",
+        description = Res.string.projects_asertiv_description,
+        shortDescription = Res.string.projects_asertiv_shortDescription,
+        technicalDescription = Res.string.projects_asertiv_technicalDescription,
+        logo = "asertiv.png",
+        skills = listOf("kotlin", "jetpack_compose", "room"),
+        type = ProjectType.MOBILE_APPLICATION,
+        links = listOf(),
+        category = ProjectCategory.COMMERCIAL,
+//        screenshots = masterSystemScreenshots,
     ),
 
 )

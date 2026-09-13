@@ -51,6 +51,27 @@
     <string name="kotlin_locative">Kotlinie</string>
     <string name="python_genitive">Pythona</string>
 
+    <string name="hero_main_label">'m developer comitted to work with Kotlin. My journey with Kotlin started at Android Course
+        on my university. After finishing my bachelor degree, I spent 2 years diving deep into this
+        language. I built 5 commercial projects with it (3 of them are multiplatform), 10 tools to
+        boost my productivity while working on other stuff, and many more projects just to exercise.
+        My biggest project is Valorant Lineups. It has nearly 200k downloads on Google Play. I
+        started this project 5 years ago. The first version was done in Python with KivyMD, but it
+        was getting harder as my app was expanding, so I migrated this to Kotlin with Jetpack
+        Compose. After that I migrated it to Kotlin Multiplatform to support the web target as well.
+        It contains features like: Firebase connection with data caching system, users' real-time
+        voting on features, offline mode (downloading data with quick updates when I create new
+        lineups), saving users' preferences in database with Room, users' lineup submissions, video
+        guides, in-app update notifications integrated with Google Play, Riot Games authentication
+        and AdMob integration.
+        Currently I'm deep diving into Kotlin Coroutines. My target is to go through 15 project
+        involving different ascepts of coroutines, from scratch to advanced. Details in this repo.
+        Besides creating apps, I'm working as a math tutor, which confirms my high math skills
+        (hence the problem solving) as well as good cooperation with people and my ability to run a
+        business.
+        I stay up to date with Kotlin. I've read the book named Kotlin in Action. I also regularly watch
+        video materials about it like KotlinConf, Dave Leeds, Philipp Lackner, and Stevdza-San.</string>
+
     <!-- SKILLS -->
     <string name="skills_title">Umiejętności techniczne</string>
     <string name="skills_subtitle">Zbiór moich języków programowania, frameworków i innych umiejętności technicznych.</string>
@@ -99,6 +120,10 @@
     <string name="projects_master_system_description">Ta aplikacja do zarządzania turniejami została opracowana na zlecenie, aby ułatwić rozgrywki według algorytmu specyficznego dla klienta. Aplikacja zapewnia przyjazny interfejs do wprowadzania wyników meczów, automatycznie paruje drużyny na kolejną rundę na podstawie algorytmu, oblicza punkty i generuje podsumowania rozgrywek w postaci pliku PDF. Aplikacja wykonuje także grafy, które reprezentują logikę algorytmu parowania drużyn. Aplikacja jest przetłumaczona na cztery języki za pomocą modułu gettext w Pythonie, co zapewnia dostępność dla zróżnicowanej grupy użytkowników. Ten projekt pokazuje moją zdolność do dostarczania dostosowanych, wielojęzycznych rozwiązań programowych, które spełniają specyficzne wymagania klienta i usprawniają zarządzanie złożonymi strukturami turniejowymi.</string>
     <string name="projects_master_system_shortDescription">Aplikacja do zarządzania turniejami z niestandardowym algorytmem</string>
     <string name="projects_master_system_technicalDescription">Aplikacja do zarządzania turniejami wykonana na zlecenie, implementująca własny algorytm parowania drużyn klienta. Aplikacja pierwotnie zbudowana w Pythonie z KivyMD – z uwagi na potrzebę wsparcia przeglądarki i urządzeń mobilnych w przyszłości, projekt został zmigrowany do Kotlin Multiplatform. Aktualna wersja oparta na Compose Multiplatform (WasmJS) ze współdzielonym UI między platformami – wspierane są Compose Desktop (JVM) oraz wersja webowa. Architektura MVI, nawigacja przez Navigation 3, brak backendu. Dane persystowane lokalnie – w localStorage przez Kotlin/JS API na przeglądarce oraz w plikach JSON na desktopie.</string>
+
+    <string name="projects_asertiv_shortDescription">Aplikacja do treningu asertywności</string>
+    <string name="projects_asertiv_description">Aplikacja do treningu asertywności. Stworzona we współpracy ze studentem psychologii. Aplikacja przypisuje użytkownikowi stopniowo coraz trudniejsze zadania, które rozwijają jego asertywność. Użytkownik sam wybiera dni, w których chce je wykonywać. Zaimplementowałem niestandardowy, rozbudowany algorytm dla obliczania serii dni użytkownika, który uwzględnia zamrożenia czasu, zadania poboczne, dni wolne, pominięcia zadań. Użytkownik może śledzić swoje postępy w formie listy wykonanych zadań lub kalendarza z zaznaczonymi dniami, w których wykonał jakieś zadanie. Może też dodawać własne notatki do zadań. Aplikacja oferuje też wiedzę psychologiczną wraz z różnymi technikami psychologicznymi, do których odnoszą się niektóre zadania.</string>
+    <string name="projects_asertiv_technicalDescription">Zadania zapisane są w bazie danych z użyciem Room. Techniki, zadania, postęp użytkownika są oczywiście rozdzielone na osobne tabele, przez co aplikacja musi wykonywać nietrywialne kwerendy SQL do poprawnego łączenia danych. Algorytm serii dni uwzględniającej wymienione w opisie obok czynniki był na tyle skomplikowany, że żaden model AI nie był w stanie go napisać, zatem stworzyłem go sam od podstaw. Sekcja "Wiedza" w aplikacji została stworzona w postaci pliku .md, by mój współtwórca (niezwiązany z informatyką) mógł go prosto przygotować, aplikacja zaś przerabia go na natywny interfejs w Jetpack Compose z użyciem odpowiedniej biblioteki.</string>
 
     <string name="projects_vl_description">Aplikacja mobilna dla graczy Valoranta, która pomaga im podczas rozgrywki. Aplikacja oferuje szeroką kolekcję lineupów, umożliwiając graczom wykonywanie zaawansowanych technik bez konieczności wcześniejszego zapamiętywania specyficznych ustawień na mapie. Dzięki aplikacji gracze mogą osiągać lepsze rezultaty w grze i zdobywać wyższe rangi. Była to pierwsza aplikacja tego typu do Valoranta dostępna na sklepie Play, osiągnęła sukecs w postaci ponad 100 tysięcy pobrań. Ten projekt podkreśla moje umiejętności w dostarczaniu innowacyjnych i skutecznych projektów.</string>
     <string name="projects_vl_shortDescription">Aplikacja mobilna dla graczy Valoranta, która pomaga im podczas rozgrywki.</string>
@@ -158,6 +183,10 @@
     <string name="projects_days_counter_shortDescription">Aplikacja do odliczania dni pomiędzy datami</string>
     <string name="projects_days_counter_description">Aplikacja do odliczania dni pomiędzy datami. Można ją uruchomić jako aplikację mobilną na Androida, desktopową lub webową. Pozwala zapisywać użytkownikowi dowolną liczbę par dat, pomiędzy którymi są obliczane: liczba dni, które minęły, liczba dni, które pozostały.</string>
 
+    <string name="projects_typing_speed_tester_shortDescription">Aplikacja do sprawdzenia prędkości pisania na klawiaturze - mobilna, desktopowa i natywna webowa</string>
+    <string name="projects_typing_speed_tester_description">Aplikacja do sprawdzenia prędkości pisania na klawiaturze - mobilna, desktopowa i natywna webowa. Użytkownik wybiera tryb testu: na czas (15, 30 lub 60 sekund) lub do końca pewnego cytatu. Aplikacja na bieżąco daje feedback użytkownikowi w formie kolorowania tekstu, który już wpisał - czerwone lub zielone litery. Po zakończeniu testu wyświetlany jest wynik: liczba słów na minutę, procent poprawnie wpisanych liter oraz procent dokładności. Interfejs aplikacji jest prosty, bez zbędnych dodatków.</string>
+    <string name="projects_typing_speed_tester_technicalDescription">Celem aplikacji było stworzenie projektu, który współdzieli logikę między wszystkie platformy, jednak interfejs pozostaje natywny dla każdej z nich. Android oraz desktop dzielą osobny moduł dla interfejsu w Compose Multiplatform. Webowa wersja używa natomiast interfejsu w Kobweb. Zastosowałem też Koin dla dependency injection, współdzielone między wszystkie platformy, dzięki czemu projekt może być używany jako template dla innych projektów wymagających wymienionych wcześniej rzeczy.</string>
+
     <string name="projects_tic_tac_toe_kotlin_shortDescription">Klient i serwer gry w kółko i krzyżyk w obrębie sieci lokalnej</string>
     <string name="projects_tic_tac_toe_kotlin_description">Klient i serwer gry w kółko i krzyżyk w obrębie sieci lokalnej. Klient może być uruchomiony jako aplikacja desktopowa, webowa lub mobilna na Androidzie. Stworzona z użyciem socketów. Zapewnia type-safe obsługę komunikatów oraz ich weryfikację.</string>
 
@@ -175,6 +204,23 @@
     <string name="projects_matura_tasks_hub_description">Strona z zadaniami maturalnymi pogrupowanymi wg działów i podkategorii. Stworzona z myślą o moich uczniach. Usprawnia także prowadzenie przeze mnie korepetycji. Poza udogonieniami dostępnymi na innych stronach tego typu, wprowadziłem kategoryzację zadań wg ich częstości pojawiania się na maturze - od pewniaków maturalnych po niestandardowe zadania, by uczniowie przygotowujący się do matury wiedzieli, na których zadaniach powinni się skupić. Dodatkowo każde zadanie ma przycisk kopiowania do schowka, dzięki czemu każde zadanie mogę bardzo szybko skopiować i wkleić w programie graficznym wykorzsytywanym podczas korepetycji.</string>
     <string name="projects_matura_tasks_hub_technicalDescription">Strona zbudowana w Kobweb (Kotlin/JS), architektura MVI z ViewModelami do zarządzania ładowaniem danych; struktura danych podzielona na warstwy z uwagi na złożoność domeny. Strona statyczna – bez backendu aplikacyjnego. Dane zadań przechowywane w SQLite, eksportowane do plików JSON skryptem Python i bundlowane ze stroną. Treść zadań renderowana przez MathJax (LaTeX w przeglądarce). Obrazki do zadań generowane są z plików LaTeX – kompilowane do PDF, następnie konwertowane do SVG przez pdf2svg. Ciemne warianty obrazków generowane automatycznie osobnym skryptem Python. Kopiowanie zadania do schowka jako obrazek realizowane przez Snapdom – umożliwia szybkie wklejenie zadania na wirtualną tablicę podczas korepetycji online. Logowanie przez konto Google lub Discord oraz obsługa funkcji premium zrealizowane przez Supabase (Authentication + Database) z integracją Stripe do obsługi płatności. Dane użytkowników i zakupionych funkcji przechowywane w Supabase DB. Strona hostowana na własnym serwerze z własną domeną.</string>
 
+    <string name="projects_youtube_uploader_shortDescription">Skrypt do zautomatyzowanego wrzucania filmów na YouTube</string>
+    <string name="projects_youtube_uploader_description">Skrypt do zautomatyzowanego wrzucania filmów na YouTube. Stworzony na potrzeby aplikacji Valorant Lineups oraz Egzaminów z Matematyki - potrzebowałem nagrać ponad 1000 filmów, stworzyć dla nich opisy i wrzucić na YouTube. Skrypt automatycznie pobiera dane z bazy danych, generuje tytuł i opis wg wzorca, a następnie uploaduje wszystko do serwisu i zapisuje w bazie danych link dla każdego rekordu.</string>
+
+    <string name="projects_video_processor_shortDescription">Aplikacja umożliwiająca bardzo szybkie dodanie napisów do filmu</string>
+    <string name="projects_video_processor_description">Aplikacja umożliwiająca bardzo szybkie dodanie napisów do filmu. Stworzona na potrzeby Valorant Lineups, gdzie musiałem dodawać krótkie napisy wyjaśniające lineupy dla niektórych filmów. Dostępne narzędzia nie pozwalały edytować w ten specyficzny sposób jednego filmu w ciągu kilkunastu sekund wraz z nadpisaniem filmu w miejscu, natomiast moja aplikacja na to pozwala.</string>
+
+    <string name="projects_connect_four_shortDescription">Przeglądarkowa wersja gry Connect Four</string>
+    <string name="projects_connect_four_description">Przeglądarkowa wersja gry Connect Four. Zbudowana w Compose HTML z oficjalnego template'u JetBrains. Stworzona jako projekt na staż w JetBrains. Poza standardową rozgrywką gra oferuje animacje, zapis stanu gry po odświeżeniu, responsywność, podświetlanie zwycięskiej czwórki.</string>
+
+    <string name="projects_daymath_image_viewer_shortDescription">Aplikacja do przeglądania obrazów wyrenderowanych z kodu LaTeX</string>
+    <string name="projects_daymath_image_viewer_description">Aplikacja do przeglądania obrazów wyrenderowanych z kodu LaTeX. Pozwala mi na szybkie sprawdzenie, czy nie zrobiłem żadnych literówek ani innych błędów pracując nad zadaniami w aplikacji DayMath.</string>
+
+    <string name="projects_tutoring_work_sheet_shortDescription">Aplikacja do śledzenia moich zarobków z korepetycji i odliczania podatku</string>
+    <string name="projects_tutoring_work_sheet_description">Aplikacja do śledzenia moich zarobków z korepetycji i odliczania podatku.</string>
+
+    <string name="projects_coroutines_learning_shortDescription">Zestaw 15 projektów do nauki coroutines od podstaw</string>
+    <string name="projects_coroutines_learning_description">Zestaw 15 projektów do nauki coroutines od podstaw. Początkowo aplikacje konsolowe, później z interfejsem graficznym. Szczegóły dostępne w pliku README w repozytorium</string>
     <!-- EXPERIENCE -->
     <string name="experience_title">Doświadczenie zawodowe</string>
     <string name="experience_subtitle">Zbiór moich doświadczeń zawodowych, w tym korepetycji i tworzenia aplikacji.</string>
@@ -191,8 +237,13 @@
     <string name="students_taught">Uczniowie</string>
     <string name="rating">Ocena</string>
     <string name="reviews">Opinie</string>
-    <string name="apps_published">Opublikowane aplikacje</string>
     <string name="total_downloads">Pobrania</string>
+
+    <plurals name="n_apps_published">
+        <item quantity="one">Opublikowana aplikacja</item>
+        <item quantity="few">Opublikowane aplikacje</item>
+        <item quantity="other">Opublikowanych aplikacji</item>
+    </plurals>
 
     <string name="home">Praca z domu</string>
     <string name="self_employed">Samozatrudnienie</string>

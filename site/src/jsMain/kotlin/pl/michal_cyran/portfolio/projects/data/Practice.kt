@@ -1,5 +1,6 @@
 package pl.michal_cyran.portfolio.projects.data
 
+import org.jetbrains.compose.web.attributes.AutoComplete.Companion.name
 import pl.michal_cyran.portfolio.projects.domain.Project
 import pl.michal_cyran.portfolio.projects.domain.ProjectCategory
 import pl.michal_cyran.portfolio.projects.domain.ProjectLink
@@ -8,6 +9,41 @@ import pl.michal_cyran.portfolio.projects.domain.ProjectType
 import pl.michal_cyran.portfolio.projects.domain.Screenshot
 
 val practiceProjects = listOf(
+    Project(
+        name = "Coroutines Learning",
+        description = Res.string.projects_coroutines_learning_description,
+        shortDescription = Res.string.projects_coroutines_learning_shortDescription,
+        logo = "fork.svg",
+        skills = listOf("kotlin"),
+        type = ProjectType.CONSOLE,
+        links = listOf(
+            ProjectLink(
+                to = "https://github.com/Lightios/KotlinCoroutinesLearning",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PRACTICE,
+        isImportant = true,
+    ),
+
+    Project(
+        name = "Typing Speed Tester",
+        description = Res.string.projects_typing_speed_tester_description,
+        shortDescription = Res.string.projects_typing_speed_tester_shortDescription,
+        technicalDescription = Res.string.projects_typing_speed_tester_technicalDescription,
+        logo = "keyboard.svg",
+        skills = listOf("kotlin", "jetpack_compose", "kobweb"),
+        type = ProjectType.MULTIPLATFORM_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "https://github.com/Lightios/DaysCounter",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PRACTICE,
+//        screenshots = daysCounterScreenshots,
+        isImportant = true,
+    ),
 
     Project(
         name = "Days Counter",
@@ -28,7 +64,7 @@ val practiceProjects = listOf(
     ),
 
     Project(
-        name = "Tic Tac Toe",
+        name = "Client-Server Tic Tac Toe",
         description = Res.string.projects_tic_tac_toe_kotlin_description,
         shortDescription = Res.string.projects_tic_tac_toe_kotlin_shortDescription,
         logo = "close_small.svg",
@@ -48,6 +84,23 @@ val practiceProjects = listOf(
         screenshots = emptyList(),
         isImportant = true,
     ),
+    Project(
+        name = "Connect Four",
+        description = Res.string.projects_connect_four_description,
+        shortDescription = Res.string.projects_connect_four_shortDescription,
+        logo = "add_task.svg",
+        skills = listOf("kotlin", "jetpack_compose"),
+        type = ProjectType.MOBILE_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "https://github.com/Lightios/ToDoList",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PRACTICE,
+        screenshots = toDoListScreenshots,
+    ),
+
     Project(
         name = "To Do List",
         description = Res.string.projects_todo_list_description,

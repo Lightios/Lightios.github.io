@@ -60,6 +60,27 @@
     <string name="kotlin_locative">Kotlin</string>
     <string name="python_genitive">Python</string>
 
+    <string name="hero_main_label">'m developer comitted to work with Kotlin. My journey with Kotlin started at Android Course
+        on my university. After finishing my bachelor degree, I spent 2 years diving deep into this
+        language. I built 5 commercial projects with it (3 of them are multiplatform), 10 tools to
+        boost my productivity while working on other stuff, and many more projects just to exercise.
+        My biggest project is Valorant Lineups. It has nearly 200k downloads on Google Play. I
+        started this project 5 years ago. The first version was done in Python with KivyMD, but it
+        was getting harder as my app was expanding, so I migrated this to Kotlin with Jetpack
+        Compose. After that I migrated it to Kotlin Multiplatform to support the web target as well.
+        It contains features like: Firebase connection with data caching system, users' real-time
+        voting on features, offline mode (downloading data with quick updates when I create new
+        lineups), saving users' preferences in database with Room, users' lineup submissions, video
+        guides, in-app update notifications integrated with Google Play, Riot Games authentication
+        and AdMob integration.
+        Currently I'm deep diving into Kotlin Coroutines. My target is to go through 15 project
+        involving different ascepts of coroutines, from scratch to advanced. Details in this repo.
+        Besides creating apps, I'm working as a math tutor, which confirms my high math skills
+        (hence the problem solving) as well as good cooperation with people and my ability to run a
+        business.
+        I stay up to date with Kotlin. I've read the book named Kotlin in Action. I also regularly watch
+        video materials about it like KotlinConf, Dave Leeds, Philipp Lackner, and Stevdza-San.</string>
+
     <!-- SKILLS -->
     <string name="skills_title">Technical Skills</string>
     <string name="skills_subtitle">A collection of my programming languages, frameworks, and other technical skills.</string>
@@ -108,6 +129,10 @@
     <string name="projects_master_system_shortDescription">Application for managing tournaments with a custom algorithm</string>
     <string name="projects_master_system_description">This tournament management application was developed on commission to facilitate competitive match play according to a client-specific algorithm. The app provides a user-friendly interface for entering match results, automatically pairs teams for the next round based on the algorithm, calculates points, and generates comprehensive PDF summaries of the tournament's progress. Additionally, it creates graphs to visually represent the algorithm's logic and outcomes. The application is translated into four languages using Python's gettext module, ensuring accessibility for a diverse user base. This project showcases my ability to deliver tailored, multilingual software solutions that meet specific client requirements and enhance the management of complex tournament structures.</string>
     <string name="projects_master_system_technicalDescription">Tournament management application developed on commission, implementing a custom client-specific pairing algorithm. Originally built in Python with KivyMD — the project was later migrated to Kotlin Multiplatform to support browser and mobile platforms in the future. The current version is based on Compose Multiplatform (WasmJS) with a shared UI across platforms — supporting Compose Desktop (JVM) and a web version. MVI architecture, navigation via Navigation 3, no backend. Data persisted locally — in localStorage via the Kotlin/JS API in the browser, and in JSON files on desktop.</string>
+
+    <string name="projects_asertiv_shortDescription">Application for assertiveness training</string>
+    <string name="projects_asertiv_description">.</string>
+    <string name="projects_asertiv_technicalDescription">.</string>
 
     <string name="projects_vl_shortDescription">Valorant Lineups is a mobile app for Valorant players that helps them during gameplay</string>
     <string name="projects_vl_description">Valorant Lineups is a mobile app created for Valorant players to assist them during gameplay. The app offers a wide collection of lineups, allowing players to execute advanced techniques without the need to memorize specific settings on the map. With this app, players can achieve better results in the game and climb higher ranks. It was the first app of its kind for Valorant available on the Play Store, achieving success with over 100,000 downloads. This project highlights my skills in delivering innovative and effective solutions.</string>
@@ -167,6 +192,10 @@
     <string name="projects_days_counter_shortDescription">Application for counting days between dates</string>
     <string name="projects_days_counter_description"> Application for counting days between dates. It can be run as a mobile app on Android, desktop, or web. It allows users to save any number of date pairs, between which it calculates: the number of days that have passed, and the number of days remaining.</string>
 
+    <string name="projects_typing_speed_tester_shortDescription">Application for checking user's typing speed - mobile, desktop and native web</string>
+    <string name="projects_typing_speed_tester_description">.</string>
+    <string name="projects_typing_speed_tester_technicalDescription">.</string>
+
     <string name="projects_tic_tac_toe_kotlin_shortDescription">Client and server for Tic-Tac-Toe game over a local network</string>
     <string name="projects_tic_tac_toe_kotlin_description">Client and server for Tic-Tac-Toe game over a local network. The client can be run as a desktop, web, or mobile app on Android. Created using sockets. It provides type-safe message handling and verification.</string>
 
@@ -185,6 +214,24 @@
     <string name="projects_matura_tasks_hub_technicalDescription">Website built with Kobweb (Kotlin/JS), MVI architecture with ViewModels managing data loading; data structures divided into layers due to domain complexity. Static site — no application backend.
     Task data stored in SQLite, exported to JSON files by a Python script and bundled with the site. Task content rendered by MathJax (LaTeX in the browser). Task images are generated from LaTeX source files — compiled to PDF, then converted to SVG using pdf2svg. Dark variants of images generated automatically by a separate Python script. Copying a task to the clipboard as an image is handled by Snapdom — enabling quick paste into a virtual whiteboard during online tutoring sessions.
         Google and Discord account login, along with premium feature management, handled by Supabase (Authentication + Database) with Stripe integration for payment processing. User data and purchased features stored in Supabase DB. Site hosted on a private server with a custom domain.</string>
+
+    <string name="projects_youtube_uploader_shortDescription">Script for automated YouTube video uploads</string>
+    <string name="projects_youtube_uploader_description">Script for automated YouTube video uploads. Created for the Valorant Lineups and Math Exams applications – I needed to record over 1,000 videos, generate descriptions for them, and upload them to YouTube. The script automatically fetches data from a database, generates a title and description based on a template, uploads everything to the platform, and saves the link for each record back in the database.</string>
+
+    <string name="projects_video_processor_shortDescription">An application for adding subtitles to a video extremely fast</string>
+    <string name="projects_video_processor_description">An application for adding subtitles to a video extremely fast. Created for Valorant Lineups, where I needed to add short explanatory subtitles for certain videos. Existing tools didn't allow editing a video in this specific way within a few seconds while overwriting the original file in place, whereas my application enables exactly that.</string>
+
+    <string name="projects_connect_four_shortDescription">Browser-based version of the Connect Four game</string>
+    <string name="projects_connect_four_description">Browser-based version of the Connect Four game. Built in Compose HTML using the official JetBrains template. Created as a project for a JetBrains internship. Beyond standard gameplay, the game features animations, state preservation upon refresh, responsiveness, and highlighting of the winning four.</string>
+
+    <string name="projects_daymath_image_viewer_shortDescription">An application for viewing images rendered from LaTeX code</string>
+    <string name="projects_daymath_image_viewer_description">An application for viewing images rendered from LaTeX code. It allows me to quickly check for typos or other errors when working on tasks in the DayMath app.</string>
+
+    <string name="projects_tutoring_work_sheet_shortDescription">An application for tracking my tutoring earnings and tax deductions</string>
+    <string name="projects_tutoring_work_sheet_description">An application for tracking my tutoring earnings and tax deductions.</string>
+
+    <string name="projects_coroutines_learning_shortDescription">A set of 15 projects for learning coroutines from scratch</string>
+    <string name="projects_coroutines_learning_description">A set of 15 projects for learning coroutines from scratch. Initially console applications, later featuring a graphical user interface. Details available in the repository's README file.</string>
     <!-- EXPERIENCE -->
     <string name="experience_title">Experience</string>
     <string name="experience_subtitle">A collection of my professional experience, including tutoring and app development.</string>
@@ -204,6 +251,11 @@
     <string name="reviews">Reviews</string>
     <string name="apps_published">Apps published</string>
     <string name="total_downloads">Total downloads</string>
+
+    <plurals name="n_apps_published">
+        <item quantity="one">App published</item>
+        <item quantity="other">Apps published</item>
+    </plurals>
 
     <string name="home">Home</string>
     <string name="self_employed">Self-employed</string>
