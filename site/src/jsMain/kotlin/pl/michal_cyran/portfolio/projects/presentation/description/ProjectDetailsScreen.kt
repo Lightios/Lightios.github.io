@@ -177,7 +177,7 @@ fun ProjectDetailsScreen(projectSlug: String) {
                 Column(modifier = Modifier.fillMaxWidth()) {
 
                     if (hasScreenshots) {
-                        Column(modifier = Modifier.padding(24.px)) {
+                        Column(modifier = Modifier.padding(24.px).fillMaxWidth()) {
                             H3 { Text(Res.string.screenshots) }
 
                             if (project.screenshots.size == 1) {
