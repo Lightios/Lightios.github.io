@@ -28,9 +28,6 @@ jobs:
         shell: bash
 
     steps:
-      - name: Query Browser Cache ID
-        id: browser-cache-id
-        run: echo "value=$(./gradlew -q :kobwebBrowserCacheId)" >> $GITHUB_OUTPUT
       - name: Fetch latest Kobweb CLI version
         run: |
           VERSION=$(curl -sSL https://raw.githubusercontent.com/varabyte/data/refs/heads/main/kobweb/cli-version.txt | xargs)
