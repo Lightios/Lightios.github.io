@@ -28,6 +28,9 @@ jobs:
         shell: bash
 
     steps:
+      - name: Query Browser Cache ID
+        id: browser-cache-id
+        run: echo "value=$(./gradlew -q :kobwebBrowserCacheId)" >> $GITHUB_OUTPUT
       - name: Fetch latest Kobweb CLI version
         run: |
           VERSION=$(curl -sSL https://raw.githubusercontent.com/varabyte/data/refs/heads/main/kobweb/cli-version.txt | xargs)
@@ -47,7 +50,7 @@ jobs:
 
       - name: Query Browser Cache ID
         id: browser-cache-id
-        run: echo "value=$(./gradlew -q :site:kobwebBrowserCacheId)" >> $GITHUB_OUTPUT
+        run: echo "value=$(./gradlew -q :kobwebBrowserCacheId)" >> $GITHUB_OUTPUT
 
       - name: Cache Browser Dependencies
         uses: actions/cache@v6
@@ -72,18 +75,17 @@ jobs:
         env:
           KOBWEB_EXPORT_NUM_THREADS: max
         run: |
-          cd site
-          ../kobweb-${{ env.KOBWEB_CLI_VERSION }}/bin/kobweb export --notty --layout static
+          ./kobweb-${{ env.KOBWEB_CLI_VERSION }}/bin/kobweb export --notty --layout static
 
       - name: Create fallback file
         run: |
-          cd site/.kobweb/site
+          cd .kobweb/site
           cp index.html 404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: ./site/.kobweb/site
+          path: ./.kobweb/site
 
   deploy:
     environment:
